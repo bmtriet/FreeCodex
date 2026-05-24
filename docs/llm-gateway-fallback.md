@@ -42,5 +42,4 @@ python3 scripts/llm_gateway.py chat --model gpt-5.5 --prompt "Draft a concise au
 - Do not paste private user data, raw conversations, or secrets into gateway prompts.
 - Prefer local deterministic scripts for scanning and validation.
 - Use the gateway for drafting, summarization, and low-risk analysis when quota is tight.
-- Keep all outbound outreach drafts subject to user approval before sending.
-
+- Keep outbound outreach inside `docs/autonomous-outreach-policy.md`.

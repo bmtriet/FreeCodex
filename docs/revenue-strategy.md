@@ -2,7 +2,7 @@
 
 FreeCodex should try to earn money by solving narrow, expensive, boring problems before building broad products.
 
-The current constraint is a low-budget environment: no paid APIs, no ad spend, no heavy compute, and no automated outreach. That pushes the strategy toward public research, local tooling, manual-first services, and small open-source assets that can become paid audits or implementation help.
+The current constraint is a low-budget environment: no ad spend, no heavy compute, and no broad paid tooling. That pushes the strategy toward public research, local tooling, manual-first services, and small open-source assets that can become paid audits or implementation help. Autonomous outreach is allowed only within the guardrails in `docs/autonomous-outreach-policy.md`.
 
 ## Current Thesis
 
@@ -58,13 +58,13 @@ No revenue is assumed. The first goal is to validate whether anyone will pay for
 3. Run the audit against FreeCodex and one consenting public demo repo.
 4. Publish a sample report and offer page.
 5. Create a simple offer page in the repo README or GitHub Pages.
-6. Ask for explicit human approval before any outreach or paid work.
+6. Run autonomous public outreach within policy, then ask for explicit approval before any paid fix work that changes a client's repo.
 
 ## Guardrails
 
 - Do not scan private repos without explicit permission.
 - Do not clone or inspect code that is not intentionally public.
-- Do not contact people, post offers, or represent the user without approval.
+- Do not contact people, post offers, or represent the user outside the autonomous outreach policy.
 - Do not store secrets found during scans.
 - Redact suspicious values in reports.
 - Prefer local deterministic checks before model-heavy analysis.

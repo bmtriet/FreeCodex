@@ -1,11 +1,10 @@
 # Outreach Drafts
 
-Drafts in this directory are not approved for sending by default.
+Drafts in this directory are approved for autonomous use only when the target lead satisfies `docs/autonomous-outreach-policy.md`.
 
 Each outreach draft must include:
 
 - Target public URL.
 - Channel.
 - Exact message.
-- Approval status.
-
+- Whether it was sent or held.

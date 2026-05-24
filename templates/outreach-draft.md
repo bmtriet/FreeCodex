@@ -2,7 +2,7 @@
 
 Channel:
 Target URL:
-Status: awaiting approval
+Status: autonomous-use candidate
 
 ## Message
 
@@ -18,3 +18,8 @@ For later paid audits: report-only is USD 49, and bounded fixes start at USD 199
 
 Payment link: https://www.paypal.com/paypalme/softreveal
 
+## Autonomous Use Rules
+
+- Send only when the target satisfies `docs/autonomous-outreach-policy.md`.
+- Personalize one sentence to the public project or thread.
+- Log sent messages under `leads/sent/`.

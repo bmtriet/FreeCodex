@@ -38,6 +38,7 @@ REQUIRED_PATHS = [
     "docs/offer-vibe-agent-repo-safety-audit.md",
     "docs/campaign-playbook.md",
     "docs/llm-gateway-fallback.md",
+    "docs/autonomous-outreach-policy.md",
     "scripts/validate_repo.py",
     "scripts/repo_audit.py",
     "scripts/llm_gateway.py",
@@ -49,6 +50,7 @@ REQUIRED_PATHS = [
     "leads/outreach/github-issue-discussion-draft.md",
     "leads/outreach/reddit-community-draft.md",
     "leads/outreach/dm-email-draft.md",
+    "leads/sent/README.md",
     ".github/workflows/validate.yml",
 ]
 

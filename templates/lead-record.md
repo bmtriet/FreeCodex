@@ -14,17 +14,16 @@ What public signal suggests this repo or builder may need a launch/readiness aud
 
 What specific risk might matter to them?
 
-## Draft Message
+## Outreach Message
 
-Message awaiting approval:
+Exact message:
 
-## Approval
+## Send Decision
 
-- [ ] Approved by user before sending.
-- [ ] Sent exactly as approved.
+- [ ] Fits autonomous outreach policy.
+- [ ] Sent exactly as recorded.
 - [ ] No private data collected.
 
 ## Follow-Up
 
 What happened next?
-

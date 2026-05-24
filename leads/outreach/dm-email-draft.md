@@ -1,7 +1,7 @@
 # DM/Email Outreach Draft
 
 Channel: DM or email
-Status: awaiting approval
+Status: autonomous-use candidate
 
 ## Use When
 
@@ -19,8 +19,10 @@ I am offering the first 3 audits free while validating the workflow. The deliver
 
 Would you like me to review your public repo?
 
-## Approval
+No worries if not useful.
 
-- [ ] Approved by user before sending.
-- [ ] Sent exactly as approved.
+## Autonomous Use
 
+- [ ] Recipient publicly invited direct contact.
+- [ ] Message is directly relevant to a public project.
+- [ ] Sent message logged under `leads/sent/`.

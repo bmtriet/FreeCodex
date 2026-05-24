@@ -12,8 +12,8 @@ The offer is not "AI security magic." It is a fast, practical pre-launch review 
 
 1. Scout public signals from GitHub, Hacker News, Product Hunt, Reddit search results, and public launch posts.
 2. Record promising leads with `templates/lead-record.md`.
-3. Prepare exact outreach drafts with `templates/outreach-draft.md`.
-4. Wait for user approval before sending anything.
+3. Prepare exact outreach using `templates/outreach-draft.md`.
+4. Send autonomously only when the lead satisfies `docs/autonomous-outreach-policy.md`; otherwise keep it as a draft.
 5. Deliver audits using `scripts/repo_audit.py`.
 6. Ask permission before publishing samples, testimonials, or anonymized learnings.
 
@@ -34,6 +34,13 @@ Avoid:
 - Projects with no reachable public context.
 - Anything that would require scraping, spam, paid APIs, or account login.
 
+## Autonomous Outreach Limits
+
+- Maximum 3 outbound messages per automation run.
+- Prefer public GitHub issues/discussions and public launch-feedback threads.
+- No repeated follow-up unless the recipient responds.
+- Log every sent message under `leads/sent/`.
+
 ## Delivery Standard
 
 - Report within 24-48 hours.
@@ -41,4 +48,3 @@ Avoid:
 - Separate confirmed issues from manual-review hints.
 - Make the first fix recommendation obvious.
 - Offer paid fixes only when the scope is bounded and high-confidence.
-

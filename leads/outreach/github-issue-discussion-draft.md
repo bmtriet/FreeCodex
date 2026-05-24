@@ -1,7 +1,7 @@
 # GitHub Issue/Discussion Outreach Draft
 
 Channel: GitHub issue or discussion
-Status: awaiting approval
+Status: autonomous-use candidate
 
 ## Use When
 
@@ -15,10 +15,9 @@ Your project looks like it may fit the checklist: leaked-secret patterns, README
 
 No account access needed, and I would only review what is already public. I am offering the first 3 public repo audits free while validating the workflow. If you want one, reply with the repo URL and any specific concerns.
 
-The output is a short prioritized markdown report, not a certified pentest.
+The output is a short prioritized markdown report, not a certified pentest. No worries if this is not useful for your project.
 
-## Approval
+## Autonomous Use
 
-- [ ] Approved by user before sending.
-- [ ] Sent exactly as approved.
-
+- [ ] Lead satisfies `docs/autonomous-outreach-policy.md`.
+- [ ] Sent message logged under `leads/sent/`.

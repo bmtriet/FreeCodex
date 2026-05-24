@@ -39,7 +39,7 @@ Not included:
 - Production infrastructure access.
 - Private repo access without explicit permission.
 - Secret storage, credential handling, or account login.
-- Automated outreach or public representation without approval.
+- Broad automated outreach, spam, or public representation outside the autonomous outreach policy.
 
 ## How To Request
 
@@ -54,4 +54,3 @@ Do not send secrets, passwords, tokens, cookies, or private keys.
 ## Disclaimer
 
 This is a lightweight launch/readiness audit. It is not a certified penetration test, legal advice, compliance guarantee, or proof that a repository is secure.
-
