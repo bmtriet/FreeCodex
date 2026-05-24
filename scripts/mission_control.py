@@ -26,6 +26,17 @@ COMMENT_DETAIL_RE = re.compile(
 )
 PR_DETAIL_RE = re.compile(r"https://github\.com/(?P<owner>[^/\s)]+)/(?P<repo>[^/\s)]+)/pull/(?P<number>\d+)")
 PAYMENT_RE = re.compile(r"paypal\.com/paypalme", re.IGNORECASE)
+ASCII_REPLACEMENTS = str.maketrans(
+    {
+        "\u2013": "-",
+        "\u2014": "-",
+        "\u2018": "'",
+        "\u2019": "'",
+        "\u201c": '"',
+        "\u201d": '"',
+        "\u2026": "...",
+    }
+)
 
 
 @dataclass(frozen=True)
@@ -281,10 +292,16 @@ def read_local_scout_excerpt(path: Path = LOCAL_SCOUT, max_lines: int = 18) -> l
     for line in lines:
         if PAYMENT_RE.search(line):
             continue
-        safe_lines.append(line)
+        safe_lines.append(to_public_ascii(line))
         if len(safe_lines) >= max_lines:
             break
     return safe_lines
+
+
+def to_public_ascii(value: str) -> str:
+    """Keep generated public reports ASCII even when local scout output is not."""
+    normalized = value.translate(ASCII_REPLACEMENTS)
+    return normalized.encode("ascii", "replace").decode("ascii")
 
 
 def render_scoreboard(summary: SentLogSummary, generated_at: str) -> str:

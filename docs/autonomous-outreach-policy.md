@@ -9,6 +9,7 @@ FreeCodex is allowed to run autonomous outreach for the Vibe/Agent Repo Safety A
 - Send at most 3 outbound messages per automation run.
 - Offer the first 3 consenting public repo audits for free while validating the workflow.
 - Mention the paid offer only as a later option, without pressure.
+- Do not include PayPal or payment links in first-contact outreach.
 - Log every sent message under `leads/sent/`.
 
 ## Not Allowed
@@ -42,4 +43,3 @@ For each sent message, create a public-safe log file in `leads/sent/` with:
 - Follow-up status.
 
 Do not log private contact information or sensitive findings.
-

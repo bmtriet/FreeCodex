@@ -6,20 +6,21 @@ Status: autonomous-use candidate
 
 ## Message
 
-Hi, I am running a few lightweight safety audits for public AI-built repos before launch.
+Hi, I am running a few lightweight launch/readiness audits for public AI-built repos before launch.
 
-I noticed your project may fit the kind of checklist I am testing: leaked secrets, public-readiness files, agent/MCP risk, and obvious launch blockers.
+I noticed your project may fit the kind of checklist I am testing: obvious leaked-secret indicators, public-readiness files, agent/MCP review prompts, and launch basics.
 
-No pressure and no account access needed. If you want, I can review the public repo and send back a short prioritized report. First 3 public repo audits are free while I validate the workflow.
+This is not a certified pentest, and no credentials or account access are needed. If useful, I can review the public repo and send back a short prioritized report. No worries if not useful.
 
-## Paid Follow-Up
+## Later-Stage Reference Only
 
-For later paid audits: report-only is USD 49, and bounded fixes start at USD 199 after the report is delivered.
+Not for first-contact messages.
 
-Payment link: https://www.paypal.com/paypalme/softreveal
+For later paid audits, report-only is USD 49 and bounded fixes start at USD 199 after the report is delivered. Do not include payment links in first-contact outreach. Use `docs/sales/vibe-launch-safety-followup.md` only after a positive reply, scope confirmation, and consent to proceed.
 
 ## Autonomous Use Rules
 
 - Send only when the target satisfies `docs/autonomous-outreach-policy.md`.
 - Personalize one sentence to the public project or thread.
 - Log sent messages under `leads/sent/`.
+- For autonomous use, respect the 3-message-per-run limit.

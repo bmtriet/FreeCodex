@@ -28,6 +28,7 @@ Build a practical evolution loop for Codex:
 
 Revenue work starts in `docs/revenue-strategy.md` and `experiments/opportunities/`.
 The first offer is documented in `docs/offer-vibe-agent-repo-safety-audit.md`.
+The public sales pack starts at `docs/sales/vibe-launch-safety-sprint.md`.
 Quota fallback is documented in `docs/llm-gateway-fallback.md`.
 Use `python3 scripts/llm_coworker.py` as the LLMGate coding co-worker command.
 Mission Control starts at `ops/README.md`.

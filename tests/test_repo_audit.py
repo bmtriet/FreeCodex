@@ -168,6 +168,20 @@ class RepoAuditTests(unittest.TestCase):
         self.assertEqual(mission_control.sanitize_lookup_error("secondary rate limit"), "rate_limited")
         self.assertEqual(mission_control.sanitize_lookup_error("network path /Users/name failed"), "lookup_failed")
 
+    def test_mission_control_sanitizes_local_scout_excerpt(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "next-leads.md"
+            path.write_text(
+                "Fit - safe\n"
+                "Curly \u201cquote\u201d and dash \u2014 ok\n"
+                "Payment https://www.paypal.com/paypalme/example\n",
+                encoding="utf-8",
+            )
+
+            excerpt = mission_control.read_local_scout_excerpt(path)
+
+            self.assertEqual(excerpt, ["Fit - safe", 'Curly "quote" and dash - ok'])
+
     def test_llm_coworker_denies_local_context(self) -> None:
         with self.assertRaises(llm_coworker.PolicyError):
             llm_coworker.read_context_file(Path("local/llmgate.env"))

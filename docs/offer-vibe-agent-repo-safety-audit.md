@@ -13,15 +13,15 @@ Fast AI-built apps can launch before their safety basics catch up. This offer is
 
 ## Pricing
 
-- First 3 consenting public repo audits: free while the workflow is being validated.
-- Report-only audit: USD 49.
+- Standard report-only audit: USD 49.
 - Report plus bounded small fixes: starts at USD 199 after the report is delivered and scope is confirmed.
+- A few free validation slots may be available for strong public-fit repos while the workflow is being validated.
 
-Payment link: https://www.paypal.com/paypalme/softreveal
+First-contact outreach does not include payment links. Payment details are shared only after a positive reply, scope confirmation, and consent to proceed.
 
 ## Turnaround
 
-Most lightweight reports are delivered within 24-48 hours after repo permission and payment, if payment applies.
+Typical lightweight report turnaround is 24-48 hours after repo permission and payment, if payment applies, subject to current queue.
 
 ## Scope
 
@@ -50,6 +50,16 @@ Send:
 - Any specific concern, such as secrets, MCP config, agent workflow, Supabase, auth, or webhooks.
 
 Do not send secrets, passwords, tokens, cookies, or private keys.
+
+## Sales Pack
+
+- `docs/sales/vibe-launch-safety-sprint.md` - packaged offer.
+- `docs/sales/vibe-launch-safety-scope.md` - scope, boundaries, and done criteria.
+- `docs/sales/vibe-launch-safety-intake.md` - public-safe intake questions.
+- `docs/sales/vibe-launch-safety-outreach.md` - first-contact templates with no payment links.
+- `docs/sales/vibe-launch-safety-followup.md` - positive-reply and paid-path follow-ups.
+- `docs/sales/proof-of-work-prs.md` - proof-of-work PR guidelines.
+- `templates/vibe-launch-safety-report.md` - delivery report template.
 
 ## Disclaimer
 
