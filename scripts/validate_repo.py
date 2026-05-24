@@ -27,6 +27,8 @@ REQUIRED_PATHS = [
     "templates/experiment-spec.md",
     "templates/skill-spec.md",
     "templates/eval-report.md",
+    "templates/opportunity-brief.md",
+    "docs/revenue-strategy.md",
     "scripts/validate_repo.py",
     ".github/workflows/validate.yml",
 ]
@@ -109,4 +111,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-

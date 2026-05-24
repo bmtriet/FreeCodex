@@ -30,3 +30,9 @@
 - Keep each experiment bounded, inspectable, and documented.
 - Preserve lessons even when prototypes are discarded.
 
+## Phase 5: Revenue Loop
+
+- Scout public market signals from GitHub, Hacker News, Reddit, Product Hunt, and similar sources.
+- Convert promising signals into opportunity briefs before building.
+- Prefer manual-first services and tiny tools that can earn before becoming SaaS.
+- Track evidence, pricing hypotheses, and next validation steps.

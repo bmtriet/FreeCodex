@@ -23,6 +23,8 @@ Build a practical evolution loop for Codex:
 - `templates/` - copy-ready templates for repeatable work.
 - `scripts/` - local validation and maintenance tools.
 
+Revenue work starts in `docs/revenue-strategy.md` and `experiments/opportunities/`.
+
 ## Current Status
 
 Status: bootstrap.
@@ -44,4 +46,3 @@ python3 scripts/validate_repo.py
 ```
 
 The validator checks required files/directories and scans candidate repository files for obvious secret patterns.
-
