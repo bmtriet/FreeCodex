@@ -27,6 +27,7 @@ Build a practical evolution loop for Codex:
 
 Revenue work starts in `docs/revenue-strategy.md` and `experiments/opportunities/`.
 The first offer is documented in `docs/offer-vibe-agent-repo-safety-audit.md`.
+Quota fallback is documented in `docs/llm-gateway-fallback.md`.
 
 ## Current Status
 

@@ -69,7 +69,9 @@ SKIP_DIRS = {
     "build",
     "coverage",
     "dist",
+    "local",
     "node_modules",
+    "private",
     "target",
     "venv",
 }
@@ -185,7 +187,11 @@ def is_text_file(path: Path) -> bool:
 def iter_text_files(root: Path) -> list[Path]:
     files: list[Path] = []
     for path in root.rglob("*"):
-        if any(part in SKIP_DIRS for part in path.parts):
+        try:
+            relative_parts = path.relative_to(root).parts
+        except ValueError:
+            relative_parts = path.parts
+        if any(part in SKIP_DIRS for part in relative_parts):
             continue
         if not path.is_file() or not is_text_file(path):
             continue

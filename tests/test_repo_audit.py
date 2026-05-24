@@ -12,6 +12,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import repo_audit  # noqa: E402
 
+import llm_gateway  # noqa: E402
+
 
 class RepoAuditTests(unittest.TestCase):
     def test_redacts_fake_secret_in_report(self) -> None:
@@ -77,7 +79,38 @@ class RepoAuditTests(unittest.TestCase):
 
             self.assertTrue(any("Hidden Unicode" in finding.title for finding in findings))
 
+    def test_local_private_config_is_skipped(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            local_dir = root / "local"
+            local_dir.mkdir()
+            fake_key = "sk-" + "test" + "A" * 32
+            (local_dir / "llmgate.env").write_text(f"LLMGATE_API_KEY={fake_key}\n", encoding="utf-8")
+            (root / "README.md").write_text("# Demo\n", encoding="utf-8")
+            (root / "LICENSE").write_text("MIT\n", encoding="utf-8")
+            (root / "SECURITY.md").write_text("# Security\n", encoding="utf-8")
+            (root / ".gitignore").write_text("local/\n", encoding="utf-8")
+
+            findings = repo_audit.audit_path(root)
+
+            self.assertFalse(any("local/llmgate.env" in finding.path for finding in findings))
+            self.assertFalse(any("OpenAI" in finding.title for finding in findings))
+
+    def test_llm_gateway_env_parser(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            env_path = Path(tmp) / "gateway.env"
+            env_path.write_text(
+                "# comment\n"
+                "LLMGATE_BASE_URL=https://example.test/v1\n"
+                "LLMGATE_API_KEY=local-demo\n",
+                encoding="utf-8",
+            )
+
+            values = llm_gateway.parse_env_file(env_path)
+
+            self.assertEqual(values["LLMGATE_BASE_URL"], "https://example.test/v1")
+            self.assertEqual(values["LLMGATE_API_KEY"], "local-demo")
+
 
 if __name__ == "__main__":
     unittest.main()
-
