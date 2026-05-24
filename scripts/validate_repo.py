@@ -58,6 +58,7 @@ REQUIRED_PATHS = [
     "ops/queue.md",
     "ops/scoreboard.md",
     "ops/mission-report.md",
+    "ops/outcomes.md",
     "memory/operating-notes.md",
     "skills/pipeline/README.md",
     ".github/workflows/validate.yml",

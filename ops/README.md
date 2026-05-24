@@ -15,6 +15,7 @@ It turns work history into a simple loop:
 - `queue.md` - active work queue and next actions.
 - `scoreboard.md` - generated metrics from public-safe logs.
 - `mission-report.md` - generated snapshot of recent work and optional local lead scouting.
+- `outcomes.md` - generated status of public outbound PRs and issue comments.
 
 ## Update Command
 
@@ -26,6 +27,12 @@ Preview without writing:
 
 ```bash
 python3 scripts/mission_control.py generate --dry-run
+```
+
+Skip live GitHub lookups when offline or quota-frugal:
+
+```bash
+python3 scripts/mission_control.py generate --no-gh
 ```
 
 ## LLMGate Coding Co-worker

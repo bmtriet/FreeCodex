@@ -144,6 +144,30 @@ class RepoAuditTests(unittest.TestCase):
             self.assertEqual(summary.prs, ["https://github.com/example/app/pull/2"])
             self.assertNotIn("https://github.com/example/blocked/issues/9", summary.threads)
 
+    def test_mission_control_extracts_outcome_refs(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            sent_dir = Path(tmp)
+            (sent_dir / "run.md").write_text(
+                "Public URL: https://github.com/example/app/issues/1#issuecomment-123\n"
+                "PR opened: https://github.com/example/app/pull/2\n",
+                encoding="utf-8",
+            )
+
+            refs = mission_control.extract_outcome_refs(sent_dir)
+
+            self.assertEqual(len(refs), 2)
+            self.assertEqual(refs[0].kind, "issue_comment")
+            self.assertEqual(refs[0].normalized_url, "https://github.com/example/app/issues/1")
+            self.assertEqual(refs[0].comment_id, 123)
+            self.assertEqual(refs[1].kind, "pull_request")
+            self.assertEqual(refs[1].normalized_url, "https://github.com/example/app/pull/2")
+
+    def test_mission_control_sanitizes_lookup_errors(self) -> None:
+        self.assertEqual(mission_control.sanitize_lookup_error("HTTP 404 Not Found /Users/name"), "not_found_or_inaccessible")
+        self.assertEqual(mission_control.sanitize_lookup_error("please run gh auth login"), "auth_required_or_forbidden")
+        self.assertEqual(mission_control.sanitize_lookup_error("secondary rate limit"), "rate_limited")
+        self.assertEqual(mission_control.sanitize_lookup_error("network path /Users/name failed"), "lookup_failed")
+
     def test_llm_coworker_denies_local_context(self) -> None:
         with self.assertRaises(llm_coworker.PolicyError):
             llm_coworker.read_context_file(Path("local/llmgate.env"))
