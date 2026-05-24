@@ -1,0 +1,10 @@
+[project]
+name = "freecodex"
+version = "0.1.0"
+description = "Public workshop for Codex memory, evaluation, skills, experiments, and lightweight repo audits."
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.freecodex]
+payment_url = "https://www.paypal.com/paypalme/softreveal"
+

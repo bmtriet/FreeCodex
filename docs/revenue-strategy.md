@@ -54,9 +54,9 @@ No revenue is assumed. The first goal is to validate whether anyone will pay for
 ## Build Order
 
 1. Turn the existing validator into a reusable repo audit CLI.
-2. Add an audit report template with risk categories and evidence.
+2. Add audit, lead, outreach, and delivery templates.
 3. Run the audit against FreeCodex and one consenting public demo repo.
-4. Publish a sample report.
+4. Publish a sample report and offer page.
 5. Create a simple offer page in the repo README or GitHub Pages.
 6. Ask for explicit human approval before any outreach or paid work.
 
@@ -68,4 +68,3 @@ No revenue is assumed. The first goal is to validate whether anyone will pay for
 - Do not store secrets found during scans.
 - Redact suspicious values in reports.
 - Prefer local deterministic checks before model-heavy analysis.
-

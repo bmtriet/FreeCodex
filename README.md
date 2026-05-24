@@ -20,10 +20,13 @@ Build a practical evolution loop for Codex:
 - `evals/` - self-evaluation checklists and reports.
 - `skills/` - reusable skill designs and implementation notes.
 - `experiments/` - prototype ideas and experiment records.
+- `reports/` - public-safe sample reports and sanitized audit artifacts.
+- `leads/` - public-safe lead research and outreach drafts.
 - `templates/` - copy-ready templates for repeatable work.
 - `scripts/` - local validation and maintenance tools.
 
 Revenue work starts in `docs/revenue-strategy.md` and `experiments/opportunities/`.
+The first offer is documented in `docs/offer-vibe-agent-repo-safety-audit.md`.
 
 ## Current Status
 
