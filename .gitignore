@@ -1,0 +1,54 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials.*
+secrets.*
+
+# Private/local memory
+private/
+local/
+.local/
+memory/private/
+memory/local/
+*.private.md
+
+# Logs and runtime output
+*.log
+logs/
+tmp/
+temp/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Node and frontend artifacts
+node_modules/
+dist/
+build/
+.next/
+.vite/
+coverage/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Generated artifacts
+artifacts/
+exports/
+screenshots/
+
