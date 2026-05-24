@@ -36,10 +36,23 @@ Use a stronger model for high-value reasoning:
 python3 scripts/llm_gateway.py chat --model gpt-5.5 --prompt "Draft a concise audit report executive summary."
 ```
 
+Scout public GitHub leads and let LLMGate score the shortlist:
+
+```bash
+python3 scripts/scout_leads.py --per-query 8 --max-candidates 25 --output local/lead-work/next-leads.md
+```
+
+Preview raw public candidates without using LLMGate:
+
+```bash
+python3 scripts/scout_leads.py --no-llm --per-query 3
+```
+
 ## Policy
 
 - Do not commit gateway credentials.
 - Do not paste private user data, raw conversations, or secrets into gateway prompts.
 - Prefer local deterministic scripts for scanning and validation.
 - Use the gateway for drafting, summarization, and low-risk analysis when quota is tight.
+- Use `scripts/scout_leads.py` for lead scoring only; it must not send outreach.
 - Keep outbound outreach inside `docs/autonomous-outreach-policy.md`.

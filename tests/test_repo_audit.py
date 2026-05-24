@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import repo_audit  # noqa: E402
 
 import llm_gateway  # noqa: E402
+import scout_leads  # noqa: E402
 
 
 class RepoAuditTests(unittest.TestCase):
@@ -110,6 +111,19 @@ class RepoAuditTests(unittest.TestCase):
 
             self.assertEqual(values["LLMGATE_BASE_URL"], "https://example.test/v1")
             self.assertEqual(values["LLMGATE_API_KEY"], "local-demo")
+
+    def test_scout_leads_normalizes_comment_urls(self) -> None:
+        url = "https://github.com/example/project/issues/12#issuecomment-12345"
+
+        self.assertEqual(
+            scout_leads.normalize_github_url(url),
+            "https://github.com/example/project/issues/12",
+        )
+
+    def test_scout_leads_extracts_repo_from_url(self) -> None:
+        url = "https://github.com/example/project/pull/7#discussion_r1"
+
+        self.assertEqual(scout_leads.repo_from_github_url(url), "example/project")
 
 
 if __name__ == "__main__":
