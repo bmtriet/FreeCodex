@@ -28,4 +28,14 @@ Preview without writing:
 python3 scripts/mission_control.py generate --dry-run
 ```
 
+## LLMGate Coding Co-worker
+
+Use LLMGate for coding proposals when the task is public-safe and the context can be explicitly selected:
+
+```bash
+python3 scripts/llm_coworker.py --task "Explain and patch a narrow issue" --context scripts/mission_control.py --mode diff --check-apply
+```
+
+Review the saved proposal under `local/llm-coworker/` before applying anything.
+
 Mission Control must never include secrets, private user data, raw chat logs, or private project material.

@@ -15,6 +15,7 @@ import repo_audit  # noqa: E402
 import llm_gateway  # noqa: E402
 import scout_leads  # noqa: E402
 import mission_control  # noqa: E402
+import llm_coworker  # noqa: E402
 
 
 class RepoAuditTests(unittest.TestCase):
@@ -142,6 +143,21 @@ class RepoAuditTests(unittest.TestCase):
             self.assertEqual(summary.issue_comments, ["https://github.com/example/app/issues/1"])
             self.assertEqual(summary.prs, ["https://github.com/example/app/pull/2"])
             self.assertNotIn("https://github.com/example/blocked/issues/9", summary.threads)
+
+    def test_llm_coworker_denies_local_context(self) -> None:
+        with self.assertRaises(llm_coworker.PolicyError):
+            llm_coworker.read_context_file(Path("local/llmgate.env"))
+
+    def test_llm_coworker_rejects_denied_diff_target(self) -> None:
+        diff = "--- a/local/demo.txt\n+++ b/local/demo.txt\n@@ -1 +1 @@\n-old\n+new\n"
+
+        with self.assertRaises(llm_coworker.PolicyError):
+            llm_coworker.extract_diff(diff)
+
+    def test_llm_coworker_validates_review_sections(self) -> None:
+        review = "# Summary\nOk\n# Findings\nNone\n# Suggested Changes\nNone\n# Risks\nLow\n"
+
+        self.assertEqual(llm_coworker.validate_review(review), review)
 
 
 if __name__ == "__main__":

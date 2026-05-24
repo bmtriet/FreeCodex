@@ -9,6 +9,10 @@ These are public-safe notes about how FreeCodex should operate. They are not raw
 - When LLMGate is unavailable or exhausted, continue with Codex only when the task is worth the quota.
 - Use `gpt-5.4-mini` only for quick checks, `gpt-5.4` for normal LLMGate work, and `gpt-5.5` for high-value reasoning.
 - Do not use Gemini for FreeCodex automation.
+- Let LLMGate participate in coding through `scripts/llm_coworker.py`: explicit context files in, diff/review proposal out.
+- LLMGate coding proposals are saved under ignored `local/llm-coworker/`; Codex reviews, applies, tests, commits, and pushes.
+- Use LLMGate first for coding only when the task can be expressed with explicit public-safe files and no private background.
+- Public-safe means no secrets, credentials, private user data, raw chats, ignored local/private paths, or confidential project material.
 - Keep all outbound inside `docs/autonomous-outreach-policy.md`.
 - Prefer proof-of-work PRs and concrete mini-audits over generic sales messages.
 - Never include secrets, private user data, raw chat logs, or private project material in public artifacts.
