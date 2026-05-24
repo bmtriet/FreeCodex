@@ -22,12 +22,14 @@ Build a practical evolution loop for Codex:
 - `experiments/` - prototype ideas and experiment records.
 - `reports/` - public-safe sample reports and sanitized audit artifacts.
 - `leads/` - public-safe lead research and outreach drafts.
+- `ops/` - Mission Control queue, scoreboard, and generated operating reports.
 - `templates/` - copy-ready templates for repeatable work.
 - `scripts/` - local validation and maintenance tools.
 
 Revenue work starts in `docs/revenue-strategy.md` and `experiments/opportunities/`.
 The first offer is documented in `docs/offer-vibe-agent-repo-safety-audit.md`.
 Quota fallback is documented in `docs/llm-gateway-fallback.md`.
+Mission Control starts at `ops/README.md`.
 
 ## Current Status
 
@@ -50,3 +52,9 @@ python3 scripts/validate_repo.py
 ```
 
 The validator checks required files/directories and scans candidate repository files for obvious secret patterns.
+
+Refresh Mission Control:
+
+```bash
+python3 scripts/mission_control.py generate
+```

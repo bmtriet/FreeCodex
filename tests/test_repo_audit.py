@@ -14,6 +14,7 @@ import repo_audit  # noqa: E402
 
 import llm_gateway  # noqa: E402
 import scout_leads  # noqa: E402
+import mission_control  # noqa: E402
 
 
 class RepoAuditTests(unittest.TestCase):
@@ -124,6 +125,23 @@ class RepoAuditTests(unittest.TestCase):
         url = "https://github.com/example/project/pull/7#discussion_r1"
 
         self.assertEqual(scout_leads.repo_from_github_url(url), "example/project")
+
+    def test_mission_control_counts_only_sent_threads(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            sent_dir = Path(tmp)
+            (sent_dir / "run.md").write_text(
+                "Public URL: https://github.com/example/app/issues/1#issuecomment-123\n"
+                "PR opened: https://github.com/example/app/pull/2\n"
+                "Held candidate: https://github.com/example/blocked/issues/9\n",
+                encoding="utf-8",
+            )
+
+            summary = mission_control.collect_sent_logs(sent_dir)
+
+            self.assertEqual(summary.files, 1)
+            self.assertEqual(summary.issue_comments, ["https://github.com/example/app/issues/1"])
+            self.assertEqual(summary.prs, ["https://github.com/example/app/pull/2"])
+            self.assertNotIn("https://github.com/example/blocked/issues/9", summary.threads)
 
 
 if __name__ == "__main__":

@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import socket
 import sys
 import urllib.error
 import urllib.request
@@ -77,6 +78,8 @@ def request_json(
         raise SystemExit(f"Gateway HTTP {error.code}: {detail}") from error
     except urllib.error.URLError as error:
         raise SystemExit(f"Gateway request failed: {error.reason}") from error
+    except (TimeoutError, socket.timeout) as error:
+        raise SystemExit(f"Gateway request timed out after {timeout}s") from error
 
 
 def command_models(args: argparse.Namespace) -> int:
@@ -164,4 +167,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-

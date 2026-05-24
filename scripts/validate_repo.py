@@ -42,6 +42,8 @@ REQUIRED_PATHS = [
     "scripts/validate_repo.py",
     "scripts/repo_audit.py",
     "scripts/llm_gateway.py",
+    "scripts/scout_leads.py",
+    "scripts/mission_control.py",
     "tests/test_repo_audit.py",
     "reports/README.md",
     "reports/samples/freecodex-audit.md",
@@ -51,6 +53,12 @@ REQUIRED_PATHS = [
     "leads/outreach/reddit-community-draft.md",
     "leads/outreach/dm-email-draft.md",
     "leads/sent/README.md",
+    "ops/README.md",
+    "ops/queue.md",
+    "ops/scoreboard.md",
+    "ops/mission-report.md",
+    "memory/operating-notes.md",
+    "skills/pipeline/README.md",
     ".github/workflows/validate.yml",
 ]
 
