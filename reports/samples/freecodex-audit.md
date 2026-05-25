@@ -33,4 +33,4 @@ This is a lightweight safety audit for launch readiness. It is not a certified p
 - Rotate any credential that may have been real.
 - Ask for a bounded fix package only after report findings are confirmed.
 
-Payment link for paid audits or fix packages: https://www.paypal.com/paypalme/softreveal
+Payment link for paid audits or fix packages: https://ko-fi.com/freecodex

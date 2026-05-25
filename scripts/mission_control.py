@@ -25,7 +25,7 @@ COMMENT_DETAIL_RE = re.compile(
     r"https://github\.com/(?P<owner>[^/\s)]+)/(?P<repo>[^/\s)]+)/issues/(?P<number>\d+)#issuecomment-(?P<comment_id>\d+)"
 )
 PR_DETAIL_RE = re.compile(r"https://github\.com/(?P<owner>[^/\s)]+)/(?P<repo>[^/\s)]+)/pull/(?P<number>\d+)")
-PAYMENT_RE = re.compile(r"paypal\.com/paypalme", re.IGNORECASE)
+PAYMENT_RE = re.compile(r"(?:paypal\.com/paypalme|ko-fi\.com/[A-Za-z0-9_-]+)", re.IGNORECASE)
 ASCII_REPLACEMENTS = str.maketrans(
     {
         "\u2013": "-",

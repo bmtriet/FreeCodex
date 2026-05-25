@@ -174,13 +174,26 @@ class RepoAuditTests(unittest.TestCase):
             path.write_text(
                 "Fit - safe\n"
                 "Curly \u201cquote\u201d and dash \u2014 ok\n"
-                "Payment https://www.paypal.com/paypalme/example\n",
+                "Payment https://ko-fi.com/freecodex\n",
                 encoding="utf-8",
             )
 
             excerpt = mission_control.read_local_scout_excerpt(path)
 
             self.assertEqual(excerpt, ["Fit - safe", 'Curly "quote" and dash - ok'])
+
+    def test_mission_control_counts_kofi_payment_links(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            sent_dir = Path(tmp)
+            (sent_dir / "run.md").write_text(
+                "Public URL: https://github.com/example/app/issues/1#issuecomment-123\n"
+                "Payment https://ko-fi.com/freecodex\n",
+                encoding="utf-8",
+            )
+
+            summary = mission_control.collect_sent_logs(sent_dir)
+
+            self.assertEqual(summary.payment_mentions, 1)
 
     def test_llm_coworker_denies_local_context(self) -> None:
         with self.assertRaises(llm_coworker.PolicyError):

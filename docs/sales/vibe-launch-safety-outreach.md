@@ -4,7 +4,7 @@ This playbook is for first-contact messages only.
 
 ## Rules
 
-- First contact never includes PayPal or payment links.
+- First contact never includes payment links.
 - Keep the message short and specific to the public context.
 - Mention that the review is lightweight and not a certified pentest.
 - Say no credentials or account access are needed.

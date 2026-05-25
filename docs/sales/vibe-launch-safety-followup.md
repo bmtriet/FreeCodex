@@ -27,7 +27,7 @@ Great. The report-only mini audit is USD 49 for one public repo.
 
 Deliverable: a concise markdown report with prioritized launch/readiness findings, redacted evidence, and recommended next actions. This is not a certified pentest or security guarantee, and no credentials or account access are needed.
 
-Payment can be sent here: https://www.paypal.com/paypalme/softreveal
+Payment can be sent here: https://ko-fi.com/freecodex
 
 After payment, I will review the repo and aim to deliver within 24-48 hours, subject to current queue.
 ```
