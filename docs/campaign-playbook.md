@@ -17,6 +17,8 @@ The offer is not "AI security magic." It is a fast, practical pre-launch review 
 5. Deliver audits using `scripts/repo_audit.py`.
 6. Ask permission before publishing samples, testimonials, or anonymized learnings.
 
+For non-GitHub channels, use `docs/sales/off-github-channel-kit.md` for Ko-fi service copy, community comment templates, marketplace gig copy, and weekly channel discipline.
+
 ## Lead Filters
 
 Prioritize leads that show at least two signals:

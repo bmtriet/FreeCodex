@@ -59,6 +59,7 @@ Do not send secrets, passwords, tokens, cookies, or private keys.
 - `docs/sales/vibe-launch-safety-outreach.md` - first-contact templates with no payment links.
 - `docs/sales/vibe-launch-safety-followup.md` - positive-reply and paid-path follow-ups.
 - `docs/sales/proof-of-work-prs.md` - proof-of-work PR guidelines.
+- `docs/sales/off-github-channel-kit.md` - public-safe non-GitHub sales channels, copy, and operating rules.
 - `templates/vibe-launch-safety-report.md` - delivery report template.
 
 ## Disclaimer
