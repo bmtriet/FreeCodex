@@ -8,9 +8,9 @@ This file is generated from public sent logs only. It never posts outreach and d
 
 | Metric | Value |
 | --- | ---: |
-| Generated at UTC | 2026-05-25T00:50:02Z |
-| Tracked outbound artifacts | 8 |
-| Pull requests tracked | 4 |
+| Generated at UTC | 2026-05-25T14:23:27Z |
+| Tracked outbound artifacts | 9 |
+| Pull requests tracked | 5 |
 | Issue comments tracked | 4 |
 | Live GitHub lookup | enabled |
 | Live fetch failures | 0 |
@@ -27,3 +27,4 @@ This file is generated from public sent logs only. It never posts outreach and d
 | pull_request | leads/sent/2026-05-24-github-outreach-002.md | https://github.com/ag-tech-group/hera-streamer-invitational-2026-web/pull/75 | https://github.com/ag-tech-group/hera-streamer-invitational-2026-web/pull/75 | MERGED | True | 1 | 0 | 2026-05-24T16:08:55Z | - |
 | pull_request | leads/sent/2026-05-24-github-outreach-003.md | https://github.com/inkognitroz/inkognitroz.github.io/pull/167 | https://github.com/inkognitroz/inkognitroz.github.io/pull/167 | OPEN | False | 0 | 0 | 2026-05-24T12:46:56Z | - |
 | pull_request | leads/sent/2026-05-25-github-outreach-004.md | https://github.com/lettucebo/CostcoTwPriceMatch/pull/46 | https://github.com/lettucebo/CostcoTwPriceMatch/pull/46 | OPEN | False | 0 | 0 | 2026-05-25T00:44:32Z | - |
+| pull_request | leads/sent/2026-05-25-github-outreach-005.md | https://github.com/Sayap-Garuda-Indah/inventory/pull/45 | https://github.com/Sayap-Garuda-Indah/inventory/pull/45 | OPEN | False | 0 | 0 | 2026-05-25T14:22:33Z | - |
