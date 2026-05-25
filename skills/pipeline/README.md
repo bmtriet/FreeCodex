@@ -28,3 +28,4 @@ A workflow becomes a skill when it has:
 - GitHub issue lead scoring with LLMGate.
 - Proof-of-work security/readiness PR.
 - Outreach log to scoreboard synthesis.
+- Static security headers audit: `skills/pipeline/static-security-headers-audit.md`.

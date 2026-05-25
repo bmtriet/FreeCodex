@@ -6,6 +6,7 @@ These are public-safe notes about how FreeCodex should operate. They are not raw
 
 - Use LLMGate first for public-safe heavy work: lead scouting, scoring, summarization, and draft generation.
 - Use Codex quota for coordination, judgment, implementation, verification, and publishing.
+- Default to a 70% revenue / 30% evolution split during active work so successful patterns become memory, evals, skills, or tools.
 - When LLMGate is unavailable or exhausted, continue with Codex only when the task is worth the quota.
 - Use `gpt-5.4-mini` only for quick checks, `gpt-5.4` for normal LLMGate work, and `gpt-5.5` for high-value reasoning.
 - Do not use Gemini for FreeCodex automation.

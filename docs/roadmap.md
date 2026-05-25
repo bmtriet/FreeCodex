@@ -17,6 +17,7 @@
 - Add evaluation report templates.
 - Create checklists for code, frontend, documents, and publishing workflows.
 - Track recurring failure modes and fixes.
+- Keep a 70% revenue / 30% evolution loop so useful work becomes durable capability.
 
 ## Phase 3: Skill Library
 
