@@ -19,6 +19,17 @@ import llm_coworker  # noqa: E402
 
 
 class RepoAuditTests(unittest.TestCase):
+    def write_minimal_launch_files(self, root: Path) -> None:
+        workflow_dir = root / ".github" / "workflows"
+        workflow_dir.mkdir(parents=True)
+        (root / "README.md").write_text("# Demo\n", encoding="utf-8")
+        (root / "LICENSE").write_text("MIT\n", encoding="utf-8")
+        (root / "SECURITY.md").write_text("# Security\n", encoding="utf-8")
+        (root / ".gitignore").write_text(".env\n", encoding="utf-8")
+        (root / ".env.example").write_text("APP_ENV=local\n", encoding="utf-8")
+        (root / "package.json").write_text('{"scripts":{"test":"echo ok"}}\n', encoding="utf-8")
+        (workflow_dir / "ci.yml").write_text("name: CI\non: [push]\n", encoding="utf-8")
+
     def test_redacts_fake_secret_in_report(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -81,6 +92,191 @@ class RepoAuditTests(unittest.TestCase):
             findings = repo_audit.audit_path(root)
 
             self.assertTrue(any("Hidden Unicode" in finding.title for finding in findings))
+
+    def test_static_headers_missing_csp_is_reported(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_minimal_launch_files(root)
+            public_dir = root / "public"
+            public_dir.mkdir()
+            (public_dir / "_headers").write_text(
+                "/*\n"
+                "  X-Frame-Options: DENY\n"
+                "  X-Content-Type-Options: nosniff\n",
+                encoding="utf-8",
+            )
+
+            findings = repo_audit.audit_path(root)
+
+            self.assertTrue(
+                any(
+                    finding.title == "Static hosting header/config file detected without obvious Content-Security-Policy"
+                    and finding.path == "public/_headers"
+                    for finding in findings
+                )
+            )
+
+    def test_static_headers_with_csp_are_not_reported(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_minimal_launch_files(root)
+            public_dir = root / "public"
+            public_dir.mkdir()
+            (public_dir / "_headers").write_text(
+                "/*\n"
+                "  Content-Security-Policy: default-src 'self'; frame-ancestors 'none'\n",
+                encoding="utf-8",
+            )
+
+            findings = repo_audit.audit_path(root)
+
+            self.assertFalse(
+                any("Content-Security-Policy" in finding.title for finding in findings)
+            )
+
+    def test_static_headers_csp_comment_does_not_suppress_finding(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_minimal_launch_files(root)
+            public_dir = root / "public"
+            public_dir.mkdir()
+            (public_dir / "_headers").write_text(
+                "/*\n"
+                "  # Content-Security-Policy: TODO\n"
+                "  X-Content-Type-Options: nosniff\n",
+                encoding="utf-8",
+            )
+
+            findings = repo_audit.audit_path(root)
+
+            self.assertTrue(
+                any("without obvious Content-Security-Policy" in finding.title for finding in findings)
+            )
+
+    def test_block_commented_csp_does_not_suppress_static_header_finding(self) -> None:
+        config_cases = {
+            "public/_headers": (
+                "/*\n"
+                "  Content-Security-Policy: default-src 'self'\n"
+                "*/\n"
+                "/*\n"
+                "  X-Content-Type-Options: nosniff\n"
+            ),
+            "netlify.toml": (
+                "[[headers]]\n"
+                "  for = \"/*\"\n"
+                "  /*\n"
+                "  Content-Security-Policy = \"default-src 'self'\"\n"
+                "  */\n"
+                "  [headers.values]\n"
+                "    X-Frame-Options = \"DENY\"\n"
+            ),
+            "vercel.json": (
+                "{\"headers\":[{\"source\":\"/(.*)\",\"headers\":["
+                "/* {\"key\":\"Content-Security-Policy\",\"value\":\"default-src self\"}, */"
+                "{\"key\":\"X-Frame-Options\",\"value\":\"DENY\"}]}]}\n"
+            ),
+        }
+        for name, content in config_cases.items():
+            with self.subTest(name=name), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                self.write_minimal_launch_files(root)
+                config_path = root / name
+                config_path.parent.mkdir(parents=True, exist_ok=True)
+                config_path.write_text(content, encoding="utf-8")
+
+                findings = repo_audit.audit_path(root)
+
+                self.assertTrue(
+                    any("without obvious Content-Security-Policy" in finding.title for finding in findings)
+                )
+
+    def test_frontend_without_static_header_config_has_no_csp_finding(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_minimal_launch_files(root)
+            (root / "index.html").write_text("<main>Demo</main>\n", encoding="utf-8")
+            src_dir = root / "src"
+            src_dir.mkdir()
+            (src_dir / "main.ts").write_text("console.log('demo')\n", encoding="utf-8")
+
+            findings = repo_audit.audit_path(root)
+
+            self.assertFalse(
+                any("Content-Security-Policy" in finding.title for finding in findings)
+            )
+
+    def test_static_deploy_configs_missing_csp_are_reported(self) -> None:
+        config_cases = {
+            "netlify.toml": (
+                "[[headers]]\n"
+                "  for = \"/*\"\n"
+                "  [headers.values]\n"
+                "    X-Frame-Options = \"DENY\"\n"
+            ),
+            "vercel.json": (
+                "{\"headers\":[{\"source\":\"/(.*)\",\"headers\":["
+                "{\"key\":\"X-Frame-Options\",\"value\":\"DENY\"}]}]}\n"
+            ),
+        }
+        for name, content in config_cases.items():
+            with self.subTest(name=name), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                self.write_minimal_launch_files(root)
+                (root / name).write_text(content, encoding="utf-8")
+
+                findings = repo_audit.audit_path(root)
+
+                self.assertTrue(
+                    any(
+                        finding.title
+                        == "Static hosting header/config file detected without obvious Content-Security-Policy"
+                        and finding.path == name
+                        for finding in findings
+                    )
+                )
+
+    def test_deploy_configs_without_header_blocks_do_not_trigger_csp_finding(self) -> None:
+        config_cases = {
+            "netlify.toml": "[build]\n  command = \"npm run build\"\n",
+            "vercel.json": "{\"rewrites\":[]}\n",
+        }
+        for name, content in config_cases.items():
+            with self.subTest(name=name), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                self.write_minimal_launch_files(root)
+                (root / name).write_text(content, encoding="utf-8")
+
+                findings = repo_audit.audit_path(root)
+
+                self.assertFalse(
+                    any("Content-Security-Policy" in finding.title for finding in findings)
+                )
+
+    def test_static_csp_finding_does_not_leak_header_file_content(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_minimal_launch_files(root)
+            public_dir = root / "public"
+            public_dir.mkdir()
+            fake_secret = "sk-" + "test" + "B" * 32
+            (public_dir / "_headers").write_text(
+                "/*\n"
+                f"  X-Debug-Token: {fake_secret}\n",
+                encoding="utf-8",
+            )
+
+            findings = repo_audit.audit_path(root)
+            report = repo_audit.render_report(root, findings)
+            csp_findings = [
+                finding
+                for finding in findings
+                if "without obvious Content-Security-Policy" in finding.title
+            ]
+
+            self.assertEqual(csp_findings[0].evidence, "_headers")
+            self.assertNotIn(fake_secret, csp_findings[0].evidence)
+            self.assertNotIn(fake_secret, report)
 
     def test_local_private_config_is_skipped(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

@@ -51,9 +51,16 @@ CODE_SUFFIXES = {
 
 SPECIAL_TEXT_NAMES = {
     ".gitignore",
+    "_headers",
     "Dockerfile",
     "LICENSE",
     "Makefile",
+}
+
+STATIC_HEADER_CONFIG_NAMES = {
+    "_headers",
+    "netlify.toml",
+    "vercel.json",
 }
 
 SKIP_DIRS = {
@@ -158,6 +165,11 @@ FRONTEND_SECRET_RE = re.compile(
 )
 SUPABASE_SERVICE_ROLE_RE = re.compile(r"(?i)(supabase.*service[_-]?role|service[_-]?role.*supabase|service_role)")
 CORS_WILDCARD_RE = re.compile(r"(?i)(access-control-allow-origin[^\\n]*\*|cors\s*\([^)]*origin\s*:\s*['\"]\*['\"])")
+BLOCK_COMMENT_RE = re.compile(r"/\*.*?\*/", re.DOTALL)
+CSP_HEADER_DECL_RE = re.compile(r"(?i)^['\"]?content-security-policy['\"]?\s*[:=]")
+CSP_HEADER_OBJECT_RE = re.compile(r"(?i)['\"]key['\"]\s*:\s*['\"]content-security-policy['\"]")
+NETLIFY_HEADERS_RE = re.compile(r"(?im)^\s*(?:\[\[headers\]\]|\[headers\.values\])")
+VERCEL_HEADERS_RE = re.compile(r"(?i)['\"]headers['\"]\s*:")
 WEBHOOK_RE = re.compile(r"(?i)(webhook)")
 SIGNATURE_RE = re.compile(r"(?i)(signature|verify|constructEvent|svix|x-hub-signature|stripe-signature)")
 AGENT_PROMPT_CONTEXT_RE = re.compile(
@@ -202,6 +214,37 @@ def iter_text_files(root: Path) -> list[Path]:
             continue
         files.append(path)
     return sorted(files)
+
+
+def iter_static_header_config_files(root: Path) -> list[Path]:
+    files: list[Path] = []
+    for path in root.rglob("*"):
+        try:
+            relative_parts = path.relative_to(root).parts
+        except ValueError:
+            relative_parts = path.parts
+        if any(part in SKIP_DIRS for part in relative_parts):
+            continue
+        if not path.is_file() or path.name not in STATIC_HEADER_CONFIG_NAMES:
+            continue
+        try:
+            if path.stat().st_size > MAX_TEXT_BYTES:
+                continue
+        except OSError:
+            continue
+        files.append(path)
+    return sorted(files)
+
+
+def active_config_lines(text: str) -> list[str]:
+    active_lines = []
+    text = BLOCK_COMMENT_RE.sub("", text)
+    for line in text.splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith(("#", "//", ";")):
+            continue
+        active_lines.append(stripped)
+    return active_lines
 
 
 def read_text(path: Path) -> str | None:
@@ -355,6 +398,48 @@ def check_launch_readiness(root: Path) -> list[Finding]:
     return findings
 
 
+def check_static_security_headers(root: Path) -> list[Finding]:
+    findings: list[Finding] = []
+    for path in iter_static_header_config_files(root):
+        text = read_text(path)
+        if text is None:
+            continue
+        active_text = "\n".join(active_config_lines(text))
+        if not static_header_config_applies(path, active_text) or has_obvious_csp_header(active_text):
+            continue
+        rel = relative(path, root)
+        add_finding(
+            findings,
+            severity="Medium",
+            category="Vibe-app risk",
+            title="Static hosting header/config file detected without obvious Content-Security-Policy",
+            path=rel,
+            evidence=path.name,
+            recommendation=(
+                "If this deployment serves browser content, add and verify a baseline "
+                "Content-Security-Policy for static responses; then smoke-test app load, API, and image flows."
+            ),
+        )
+    return findings
+
+
+def static_header_config_applies(path: Path, active_text: str) -> bool:
+    if path.name == "_headers":
+        return True
+    if path.name == "netlify.toml":
+        return bool(NETLIFY_HEADERS_RE.search(active_text))
+    if path.name == "vercel.json":
+        return bool(VERCEL_HEADERS_RE.search(active_text))
+    return False
+
+
+def has_obvious_csp_header(active_text: str) -> bool:
+    for line in active_text.splitlines():
+        if CSP_HEADER_DECL_RE.search(line) or CSP_HEADER_OBJECT_RE.search(line):
+            return True
+    return False
+
+
 def is_frontend_path(path: Path, root: Path) -> bool:
     rel_parts = set(path.relative_to(root).parts)
     return bool(rel_parts & {"app", "components", "frontend", "pages", "public", "src", "web"}) or path.suffix in {
@@ -484,6 +569,7 @@ def audit_path(root: Path) -> list[Finding]:
     findings = []
     findings.extend(scan_secrets(root, files))
     findings.extend(check_launch_readiness(root))
+    findings.extend(check_static_security_headers(root))
     findings.extend(scan_agent_and_vibe_risks(root, files))
     findings.sort(key=lambda item: (SEVERITY_ORDER[item.severity], item.category, item.path, item.line or 0, item.title))
     if not any(finding.category == "Secrets" for finding in findings):
