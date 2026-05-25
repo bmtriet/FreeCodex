@@ -17,7 +17,7 @@ Fast AI-built apps can launch before their safety basics catch up. This offer is
 - Report plus bounded small fixes: starts at USD 199 after the report is delivered and scope is confirmed.
 - A few free validation slots may be available for strong public-fit repos while the workflow is being validated.
 
-First-contact outreach does not include payment links. Payment details are shared only after a positive reply, scope confirmation, and consent to proceed.
+First-contact outreach does not include payment links. The public landing page may list pricing and the payment destination for ready buyers, but paid work starts only after a positive reply, scope confirmation, and consent to proceed.
 
 ## Turnaround
 

@@ -13,21 +13,26 @@ Prioritize channels that match the current offer and can be used without ad spen
    - Use as the public landing point after someone replies with interest.
    - Do not drop the payment link in first contact.
 
-2. **Hacker News comments**
+2. **GitHub Pages service landing page**
+   - Public URL: `https://bmtriet.github.io/FreeCodex/`.
+   - Use when a channel expects a service page, profile link, or post-reply details page.
+   - For first-contact outreach, prefer a short useful comment; share the landing page only when the thread context makes a service link welcome or after a positive reply.
+
+3. **Hacker News comments**
    - Best for builders already discussing launch, hiring, or product work.
    - There is a current **May 2026 "Who wants to be hired?"** thread, but use it only if posting as a personal freelance availability note that follows the thread rules.
    - Keep comments useful and specific, not sales-heavy.
 
-3. **Reddit comments**
+4. **Reddit comments**
    - Best in SaaS, startup, indie hacker, and launch-feedback discussions.
    - Public SaaS discussions show interest in basic pre-launch security checklists.
    - Lead with useful framing, not a pitch dump.
 
-4. **Indie Hackers comments**
+5. **Indie Hackers comments**
    - Best on launch, validation, and build-in-public posts.
    - Keep it short and peer-like.
 
-5. **Freelance/marketplace gig pages**
+6. **Freelance/marketplace gig pages**
    - Use for buyers who want a clear fixed-scope service.
    - Position as lightweight repo review and launch-readiness audit, not pentesting.
 

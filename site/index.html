@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FreeCodex offers lightweight launch-readiness audits for public AI-built app repositories and agent workflows.">
+    <meta property="og:title" content="FreeCodex Vibe/Agent Repo Safety Audit">
+    <meta property="og:description" content="A concise public-repo safety report before launch: secrets, env handling, CI, agent workflow, CSP, CORS, auth, and webhook review prompts.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://bmtriet.github.io/FreeCodex/assets/audit-workbench.svg">
+    <title>FreeCodex | Vibe/Agent Repo Safety Audit</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="FreeCodex home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span>FreeCodex</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#scope">Scope</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#request">Request</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Public repo launch-readiness</p>
+          <h1 id="hero-title">Vibe/Agent Repo Safety Audit</h1>
+          <p class="lede">
+            A lightweight review for public GitHub repos built fast with AI coding agents,
+            MCP servers, agent skills, Lovable, Bolt, Replit, Cursor, Codex, Claude Code,
+            or similar workflows.
+          </p>
+          <div class="actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#request"><span aria-hidden="true">-></span> Request a fit check</a>
+            <a class="button button-secondary" href="https://github.com/bmtriet/FreeCodex"><span aria-hidden="true">[]</span> View workshop</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Offer summary">
+        <div>
+          <strong>24-48h</strong>
+          <span>typical turnaround</span>
+        </div>
+        <div>
+          <strong>Public only</strong>
+          <span>no credentials needed</span>
+        </div>
+        <div>
+          <strong>Redacted</strong>
+          <span>evidence in reports</span>
+        </div>
+      </section>
+
+      <section class="section" id="scope" aria-labelledby="scope-title">
+        <div class="section-heading">
+          <p class="eyebrow">What gets checked</p>
+          <h2 id="scope-title">Catch boring launch mistakes before they become expensive.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Secrets and env handling</h3>
+            <p>Obvious leaked-secret patterns, risky env examples, and client-side secret names.</p>
+          </article>
+          <article class="feature">
+            <h3>Public readiness</h3>
+            <p>README, license, security policy, gitignore, CI, dependency metadata, and examples.</p>
+          </article>
+          <article class="feature">
+            <h3>Agent workflow risk</h3>
+            <p>Agent instructions, MCP configs, skill files, and workflows that pass untrusted text into agents.</p>
+          </article>
+          <article class="feature">
+            <h3>Vibe-app hints</h3>
+            <p>Database permission confusion, wildcard CORS, webhook signature prompts, and static CSP gaps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" aria-labelledby="deliverable-title">
+        <div>
+          <p class="eyebrow">Deliverable</p>
+          <h2 id="deliverable-title">One concise markdown report with a prioritized fix list.</h2>
+        </div>
+        <div class="report-preview" aria-label="Sample report layout">
+          <div class="report-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="report-row critical"><b>High</b><span>Possible frontend secret exposure</span></div>
+          <div class="report-row medium"><b>Medium</b><span>Static header config missing obvious CSP</span></div>
+          <div class="report-row low"><b>Low</b><span>Security policy missing reporting path</span></div>
+          <div class="report-note">Evidence is redacted. Uncertain items are labeled for manual review.</div>
+        </div>
+      </section>
+
+      <section class="section compact" id="pricing" aria-labelledby="pricing-title">
+        <div class="section-heading">
+          <p class="eyebrow">Simple pricing</p>
+          <h2 id="pricing-title">Start with the report. Scope fixes only after facts are clear.</h2>
+        </div>
+        <div class="price-grid">
+          <article class="price">
+            <h3>Validation slots</h3>
+            <p class="amount">First 3 free</p>
+            <p>For strong-fit public repos while the workflow is being validated.</p>
+          </article>
+          <article class="price featured">
+            <h3>Report only</h3>
+            <p class="amount">USD 49</p>
+            <p>One public repo, concise markdown report, redacted findings, prioritized fixes.</p>
+          </article>
+          <article class="price">
+            <h3>Report + small fixes</h3>
+            <p class="amount">USD 199+</p>
+            <p>Only after report delivery, confirmation, and bounded scope.</p>
+          </article>
+        </div>
+        <p class="payment-note">
+          Payment destination after scope confirmation: <a href="https://ko-fi.com/freecodex">ko-fi.com/freecodex</a>.
+        </p>
+      </section>
+
+      <section class="request" id="request" aria-labelledby="request-title">
+        <div>
+          <p class="eyebrow">Request</p>
+          <h2 id="request-title">Send a public repo URL and launch context.</h2>
+          <p>
+            Do not send secrets, passwords, tokens, cookies, private keys, or account access.
+            Private repos need explicit permission and a separate scope discussion.
+          </p>
+        </div>
+        <div class="request-actions">
+          <a
+            class="button button-primary"
+            href="https://github.com/bmtriet/FreeCodex/issues/new?title=Vibe%2FAgent%20Repo%20Safety%20Audit%20fit%20check&amp;body=Public%20repo%20URL%3A%0ALaunch%20context%3A%0ASpecific%20concern%3A%0A%0ADo%20not%20include%20secrets%2C%20tokens%2C%20cookies%2C%20private%20keys%2C%20or%20private%20data."
+          ><span aria-hidden="true">-></span> Open fit-check issue</a>
+          <a class="button button-secondary" href="https://github.com/bmtriet/FreeCodex/blob/main/reports/samples/freecodex-audit.md"><span aria-hidden="true">#</span> Sample report</a>
+        </div>
+      </section>
+
+      <section class="disclaimer" aria-labelledby="disclaimer-title">
+        <h2 id="disclaimer-title">Boundary</h2>
+        <p>
+          This is a lightweight launch/readiness audit. It is not a certified penetration
+          test, legal advice, compliance guarantee, or proof that a repository is secure.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
