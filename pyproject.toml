@@ -6,5 +6,4 @@ requires-python = ">=3.11"
 dependencies = []
 
 [tool.freecodex]
-payment_url = "https://www.paypal.com/paypalme/softreveal"
-
+payment_url = "https://ko-fi.com/freecodex"

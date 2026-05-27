@@ -1,0 +1,59 @@
+name: Vibe/Agent Repo Safety Audit fit check
+description: Request a public-safe fit check for a public AI-built app or agent repo.
+title: "Vibe/Agent Repo Safety Audit fit check"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for checking fit. Please include only public-safe information.
+        Do not paste secrets, passwords, tokens, cookies, private keys, private customer data, or account access.
+  - type: input
+    id: repo_url
+    attributes:
+      label: Public repo URL
+      description: Paste one public GitHub repository URL only. Do not include private links or access details here.
+      placeholder: "https://github.com/owner/repo"
+    validations:
+      required: true
+  - type: textarea
+    id: launch_context
+    attributes:
+      label: Launch context
+      description: What is launching, when, and what kind of review would help?
+      placeholder: "Example: AI-built SaaS MVP launching next week; want a lightweight repo safety/readiness review before sharing it publicly."
+    validations:
+      required: true
+  - type: textarea
+    id: concerns
+    attributes:
+      label: Specific concerns
+      description: Optional public-safe concerns to prioritize.
+      placeholder: "Examples: secrets/env handling, CI, MCP config, agent workflow, auth, CORS, CSP, webhooks, Supabase."
+    validations:
+      required: false
+  - type: dropdown
+    id: requested_path
+    attributes:
+      label: Requested path
+      description: Pick the closest starting point. Final scope is confirmed in a reply before paid work starts.
+      options:
+        - Free validation slot, if available
+        - USD 49 report-only audit
+        - Report plus small-fix discussion
+        - Not sure yet
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Public-safety acknowledgements
+      description: These boundaries keep the work safe and scoped.
+      options:
+        - label: This request is for a public repository. If I want review of any private or non-public material, that requires a separate scope discussion and must not be posted in this public issue.
+          required: true
+        - label: I will not include secrets, passwords, tokens, cookies, private keys, private data, or account access.
+          required: true
+        - label: I understand this is a lightweight launch/readiness audit, not a certified penetration test, compliance attestation, or guarantee of security.
+          required: true
+        - label: I understand paid work, if applicable, starts only after a positive reply, scope confirmation, and consent to proceed.
+          required: true

@@ -68,7 +68,10 @@ REQUIRED_PATHS = [
     "ops/outcomes.md",
     "memory/operating-notes.md",
     "skills/pipeline/README.md",
+    "skills/pipeline/public-safe-booking-funnel.md",
     ".github/workflows/validate.yml",
+    ".github/workflows/pages.yml",
+    ".github/ISSUE_TEMPLATE/audit-fit-check.yml",
 ]
 
 SECRET_PATTERNS = [

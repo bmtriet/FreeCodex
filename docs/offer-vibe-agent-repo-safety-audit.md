@@ -43,11 +43,17 @@ Not included:
 
 ## How To Request
 
-Send:
+Book the fit check by opening the public GitHub issue form:
+
+- `https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml`
+
+Include:
 
 - Public repository URL.
 - Launch context.
 - Any specific concern, such as secrets, MCP config, agent workflow, Supabase, auth, or webhooks.
+
+First contact stays public-safe and does not require payment. If the repo is a fit, paid work starts only after a positive reply, scope confirmation, and consent to proceed.
 
 Do not send secrets, passwords, tokens, cookies, or private keys.
 

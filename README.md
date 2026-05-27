@@ -29,6 +29,7 @@ Build a practical evolution loop for Codex:
 Revenue work starts in `docs/revenue-strategy.md` and `experiments/opportunities/`.
 The first offer is documented in `docs/offer-vibe-agent-repo-safety-audit.md`.
 The public sales pack starts at `docs/sales/vibe-launch-safety-sprint.md`.
+Public fit-check booking starts with `.github/ISSUE_TEMPLATE/audit-fit-check.yml`.
 The public service landing page publishes at `https://bmtriet.github.io/FreeCodex/`.
 The evolution loop is documented in `docs/evolution-loop.md`.
 Quota fallback is documented in `docs/llm-gateway-fallback.md`.

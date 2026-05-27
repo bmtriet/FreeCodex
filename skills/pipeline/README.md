@@ -29,3 +29,4 @@ A workflow becomes a skill when it has:
 - Proof-of-work security/readiness PR.
 - Outreach log to scoreboard synthesis.
 - Static security headers audit: `skills/pipeline/static-security-headers-audit.md`.
+- Public-safe booking funnel: `skills/pipeline/public-safe-booking-funnel.md`.

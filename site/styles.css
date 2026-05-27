@@ -411,6 +411,12 @@ h3 {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.request-note {
+  grid-column: 1 / -1;
+  margin-top: -8px;
+  font-size: 0.94rem;
+}
+
 .request .eyebrow {
   color: #8df2df;
 }
