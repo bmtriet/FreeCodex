@@ -11,9 +11,9 @@ Use this shape for local-only configuration:
 ```bash
 LLMGATE_BASE_URL=https://llmgate.app/v1
 LLMGATE_QUICK_MODEL=gpt-5.4-mini
-LLMGATE_DEFAULT_MODEL=gpt-5.4
-LLMGATE_SCOUT_MODEL=gpt-5.4
-LLMGATE_CODE_MODEL=gpt-5.4
+LLMGATE_DEFAULT_MODEL=gpt-5.5
+LLMGATE_SCOUT_MODEL=gpt-5.5
+LLMGATE_CODE_MODEL=gpt-5.5
 LLMGATE_STRONG_MODEL=gpt-5.5
 LLMGATE_MODELS=gpt-5.5,gpt-5.4,gpt-5.4-mini
 LLMGATE_API_KEY=replace-with-local-secret
@@ -22,8 +22,8 @@ LLMGATE_API_KEY=replace-with-local-secret
 ## Model Policy
 
 - Use `gpt-5.4-mini` only for quick checks, formatting, and low-stakes summaries.
-- Use `gpt-5.4` for default research, lead scoring, drafting, and report synthesis.
-- Use `gpt-5.5` for high-value strategy, final review, and difficult technical reasoning.
+- Use `gpt-5.5` for default research, lead scoring, drafting, report synthesis, coding proposals, high-value strategy, final review, and difficult technical reasoning.
+- Use `gpt-5.4` only when `gpt-5.5` is unavailable or a task explicitly needs a cheaper fallback.
 - Do not use Gemini for FreeCodex automation; it has been unreliable in this gateway.
 
 ## Usage

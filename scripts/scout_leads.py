@@ -206,7 +206,7 @@ def build_prompt(candidates: list[Candidate], top_n: int) -> str:
 def score_with_llmgate(args: argparse.Namespace, candidates: list[Candidate]) -> str:
     config = llm_gateway.load_config(args.env)
     base_url, api_key = llm_gateway.require_config(config)
-    model = args.model or config.get("LLMGATE_SCOUT_MODEL", "gpt-5.4")
+    model = args.model or config.get("LLMGATE_SCOUT_MODEL", "gpt-5.5")
     prompt = build_prompt(candidates[: args.max_candidates], args.top)
     data = llm_gateway.request_json(
         base_url=base_url,

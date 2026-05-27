@@ -202,7 +202,7 @@ def build_prompt(mode: str, task: str, contexts: list[ContextFile]) -> str:
 def request_llm(args: argparse.Namespace, prompt: str) -> str:
     config = llm_gateway.load_config(args.env)
     base_url, api_key = llm_gateway.require_config(config)
-    model = args.model or config.get("LLMGATE_CODE_MODEL") or config.get("LLMGATE_DEFAULT_MODEL", "gpt-5.4")
+    model = args.model or config.get("LLMGATE_CODE_MODEL") or config.get("LLMGATE_DEFAULT_MODEL", "gpt-5.5")
     payload = {
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
@@ -360,7 +360,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--mode", choices=["diff", "review"], default="diff")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--check-apply", action="store_true", help="run git apply --check on generated diff")
-    parser.add_argument("--model", help="LLMGate model id; defaults to LLMGATE_CODE_MODEL or gpt-5.4")
+    parser.add_argument("--model", help="LLMGate model id; defaults to LLMGATE_CODE_MODEL or gpt-5.5")
     parser.add_argument("--max-context-bytes", type=int, default=DEFAULT_MAX_CONTEXT_BYTES)
     parser.add_argument("--max-tokens", type=int, default=2400)
     parser.add_argument("--timeout", type=int, default=90)

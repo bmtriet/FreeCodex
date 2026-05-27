@@ -104,7 +104,7 @@ def read_prompt(args: argparse.Namespace) -> str:
 def command_chat(args: argparse.Namespace) -> int:
     config = load_config(args.env)
     base_url, api_key = require_config(config)
-    model = args.model or config.get("LLMGATE_DEFAULT_MODEL", "gpt-5.4")
+    model = args.model or config.get("LLMGATE_DEFAULT_MODEL", "gpt-5.5")
     prompt = read_prompt(args)
     payload = {
         "model": model,
