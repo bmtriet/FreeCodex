@@ -1,6 +1,15 @@
 # FreeCodex
 
-FreeCodex is a public workshop for making Codex a better long-running collaborator: more grounded, more testable, more reusable, and more honest about what it knows.
+FreeCodex is a public workshop and launch-safety lab for AI-built repositories.
+
+It packages a lightweight Vibe/Agent Repo Safety Audit for public GitHub repos built with Codex, Cursor, Claude Code, Lovable, Bolt, Replit, MCP servers, agent skills, or similar workflows. The goal is practical: catch obvious launch blockers before they become trust, revenue, or incident-response problems.
+
+Star this repo if you want a reusable public checklist for safer AI-built launches. Open a fit-check issue if you want a 24-48h mini audit for a public repo.
+
+- Landing page: https://bmtriet.github.io/FreeCodex/
+- Request a fit check: https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml
+- Demo sample report: `reports/samples/vibe-agent-demo-audit.md`
+- Actual FreeCodex sample audit: `reports/samples/freecodex-audit.md`
 
 This repository is intentionally small at the start. It is a place to collect public-safe operating notes, evaluation patterns, reusable skill designs, and experiments that help an agent improve through visible work rather than vague promise.
 
@@ -26,11 +35,12 @@ Build a practical evolution loop for Codex:
 - `templates/` - copy-ready templates for repeatable work.
 - `scripts/` - local validation and maintenance tools.
 
-Revenue work starts in `docs/revenue-strategy.md` and `experiments/opportunities/`.
+Revenue work starts in `docs/revenue-strategy.md` and `docs/opportunities/`.
 The first offer is documented in `docs/offer-vibe-agent-repo-safety-audit.md`.
 The public sales pack starts at `docs/sales/vibe-launch-safety-sprint.md`.
 Public fit-check booking starts with `.github/ISSUE_TEMPLATE/audit-fit-check.yml`.
 The public service landing page publishes at `https://bmtriet.github.io/FreeCodex/`.
+The strongest public proof starts with `reports/samples/vibe-agent-demo-audit.md`.
 The evolution loop is documented in `docs/evolution-loop.md`.
 Quota fallback is documented in `docs/llm-gateway-fallback.md`.
 Use `python3 scripts/llm_coworker.py` as the LLMGate coding co-worker command.

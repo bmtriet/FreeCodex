@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="FreeCodex offers lightweight launch-readiness audits for public AI-built app repositories and agent workflows.">
+    <link rel="canonical" href="https://bmtriet.github.io/FreeCodex/">
     <meta property="og:title" content="FreeCodex Vibe/Agent Repo Safety Audit">
-    <meta property="og:description" content="A concise public-repo safety report before launch: secrets, env handling, CI, agent workflow, CSP, CORS, auth, and webhook review prompts.">
+    <meta property="og:description" content="A concise public-repo safety report before launch: tenant isolation, secrets, webhooks, MCP trust boundaries, CI, CSP, CORS, and env handling.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bmtriet.github.io/FreeCodex/">
     <meta property="og:image" content="https://bmtriet.github.io/FreeCodex/assets/audit-workbench.svg">
     <title>FreeCodex | Vibe/Agent Repo Safety Audit</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -20,6 +22,7 @@
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#scope">Scope</a>
+        <a href="#use">Use repo</a>
         <a href="#pricing">Pricing</a>
         <a href="#request">Request</a>
       </nav>
@@ -31,13 +34,13 @@
           <p class="eyebrow">Public repo launch-readiness</p>
           <h1 id="hero-title">Vibe/Agent Repo Safety Audit</h1>
           <p class="lede">
-            A lightweight review for public GitHub repos built fast with AI coding agents,
-            MCP servers, agent skills, Lovable, Bolt, Replit, Cursor, Codex, Claude Code,
-            or similar workflows.
+            A lightweight review for public GitHub repos built fast with AI tools. Catch
+            tenant-isolation gaps, exposed secret patterns, webhook mistakes, MCP trust-boundary
+            confusion, and launch-readiness debt before the first serious user arrives.
           </p>
           <div class="actions" aria-label="Primary actions">
-            <a class="button button-primary" href="https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml"><span aria-hidden="true">-></span> Request a fit check</a>
-            <a class="button button-secondary" href="https://github.com/bmtriet/FreeCodex"><span aria-hidden="true">[]</span> View workshop</a>
+            <a class="button button-primary" href="https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml">Request a fit check</a>
+            <a class="button button-secondary" href="https://github.com/bmtriet/FreeCodex">Star / fork the repo</a>
           </div>
         </div>
       </section>
@@ -48,12 +51,30 @@
           <span>typical turnaround</span>
         </div>
         <div>
-          <strong>Public only</strong>
-          <span>no credentials needed</span>
+          <strong>No credentials</strong>
+          <span>public repo only</span>
         </div>
         <div>
-          <strong>Redacted</strong>
-          <span>evidence in reports</span>
+          <strong>Open source</strong>
+          <span>star, fork, or run locally</span>
+        </div>
+      </section>
+
+      <section class="section signal" aria-labelledby="signal-title">
+        <div class="section-heading">
+          <p class="eyebrow">Why this now</p>
+          <h2 id="signal-title">The failure pattern is getting clearer: fast demos, weak trust boundaries.</h2>
+          <p>
+            Recent public builder threads keep naming the same practical blockers: Supabase/RLS
+            confusion, IDOR/BOLA mistakes, leaked keys, webhook validation gaps, and MCP tool
+            permissions that were never reviewed as a launch surface.
+          </p>
+        </div>
+        <div class="signal-list" aria-label="Public signal examples">
+          <a href="https://www.reddit.com/r/vibecoding/comments/1tepu7n/i_reviewed_3_vibecoded_apps_as_a_senior_engineer/">Vibe-coded app review patterns</a>
+          <a href="https://www.reddit.com/r/vibecoding/comments/1tn3ot3/would_you_pay_for_security_reviews_for_vibe_coded/">Payment intent discussion</a>
+          <a href="https://github.com/topics/mcp-security">MCP security projects</a>
+          <a href="https://news.ycombinator.com/item?id=47367404">MCP signing discussion</a>
         </div>
       </section>
 
@@ -68,6 +89,10 @@
             <p>Obvious leaked-secret patterns, risky env examples, and client-side secret names.</p>
           </article>
           <article class="feature">
+            <h3>Tenant isolation</h3>
+            <p>Public code paths that suggest missing ownership checks, broad policies, or IDOR risk.</p>
+          </article>
+          <article class="feature">
             <h3>Public readiness</h3>
             <p>README, license, security policy, gitignore, CI, dependency metadata, and examples.</p>
           </article>
@@ -76,9 +101,28 @@
             <p>Agent instructions, MCP configs, skill files, and workflows that pass untrusted text into agents.</p>
           </article>
           <article class="feature">
-            <h3>Vibe-app hints</h3>
-            <p>Database permission confusion, wildcard CORS, webhook signature prompts, and static CSP gaps.</p>
+            <h3>Webhook and browser risk</h3>
+            <p>Signature prompts, wildcard CORS, static CSP gaps, and launch-facing browser defaults.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="split-section use-section" id="use" aria-labelledby="use-title">
+        <div>
+          <p class="eyebrow">Use it yourself</p>
+          <h2 id="use-title">Run the lightweight audit locally, then star the repo if it saved time.</h2>
+          <p>
+            FreeCodex is public by design. Builders can run the deterministic checks before asking
+            for a paid report, and the repo stays useful even when a buyer is not ready yet.
+          </p>
+        </div>
+        <div class="code-card" aria-label="Local audit commands">
+          <pre><code>git clone https://github.com/bmtriet/FreeCodex.git
+cd FreeCodex
+python3 scripts/validate_repo.py
+python3 scripts/repo_audit.py audit --path . \
+  --output local-audit.md</code></pre>
+          <a class="text-link" href="https://github.com/bmtriet/FreeCodex">Open the GitHub repo</a>
         </div>
       </section>
 
@@ -140,8 +184,8 @@
           <a
             class="button button-primary"
             href="https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml"
-          ><span aria-hidden="true">-></span> Open fit-check issue</a>
-          <a class="button button-secondary" href="https://github.com/bmtriet/FreeCodex/blob/main/reports/samples/freecodex-audit.md"><span aria-hidden="true">#</span> Sample report</a>
+          >Open fit-check issue</a>
+          <a class="button button-secondary" href="https://github.com/bmtriet/FreeCodex/blob/main/reports/samples/vibe-agent-demo-audit.md">Sample report</a>
         </div>
         <p class="request-note">
           The booking path is a public GitHub issue form. First contact stays public-safe,

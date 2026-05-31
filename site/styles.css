@@ -266,7 +266,7 @@ h3 {
 }
 
 .feature-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .feature,
@@ -296,7 +296,83 @@ h3 {
 }
 
 .feature:nth-child(4) {
+  border-top: 4px solid #6f7f8d;
+}
+
+.feature:nth-child(5) {
   border-top: 4px solid var(--navy);
+}
+
+.signal {
+  padding-top: 18px;
+}
+
+.signal .section-heading p:last-child,
+.use-section p {
+  max-width: 760px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.signal-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.signal-list a,
+.text-link {
+  color: var(--teal-dark);
+  font-weight: 760;
+}
+
+.signal-list a {
+  display: flex;
+  min-height: 82px;
+  align-items: center;
+  padding: 18px;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 24px rgba(15, 36, 51, 0.07);
+}
+
+.signal-list a:hover,
+.text-link:hover {
+  color: var(--navy);
+}
+
+.use-section {
+  padding-top: 38px;
+}
+
+.code-card {
+  overflow: hidden;
+  background: #071924;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.code-card pre {
+  margin: 0;
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.code-card code {
+  color: #dff9f2;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.code-card .text-link {
+  display: block;
+  padding: 16px 24px 20px;
+  color: #8df2df;
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .split-section {
@@ -440,14 +516,20 @@ h3 {
   }
 
   .feature-grid,
+  .signal-list,
   .price-grid,
   .split-section,
   .request {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .feature {
     min-height: auto;
+  }
+
+  .split-section,
+  .request {
+    grid-template-columns: 1fr;
   }
 
   .request-actions {
@@ -472,6 +554,9 @@ h3 {
   .hero {
     min-height: 70vh;
     padding: 64px 18px 78px;
+    background-image:
+      linear-gradient(90deg, rgba(15, 36, 51, 0.98), rgba(15, 36, 51, 0.94), rgba(15, 36, 51, 0.9)),
+      url("assets/audit-workbench.svg");
     background-position: 58% center;
   }
 
@@ -503,6 +588,12 @@ h3 {
 
   .proof-strip {
     transform: translateY(-24px);
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid,
+  .signal-list,
+  .price-grid {
     grid-template-columns: 1fr;
   }
 

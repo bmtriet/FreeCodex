@@ -19,7 +19,7 @@ This is a lightweight launch/readiness review, not a certified penetration test,
 
 ### [Severity] Finding Title
 
-- Area: [Secrets / Env / CI / Agent workflow / Auth / Webhook / CORS / Docs / Dependencies]
+- Area: [Secrets / Env / CI / Agent workflow / MCP / Tenant isolation / Auth / Webhook / CORS / Browser headers / Docs / Dependencies]
 - Evidence: [redacted public evidence]
 - Why it matters: [short explanation]
 - Recommendation: [specific next action]
@@ -38,6 +38,12 @@ This is a lightweight launch/readiness review, not a certified penetration test,
 ## Fix Sprint Candidates
 
 - [Bounded fix that could be done in one PR or patch set]
+
+## Public-Safe Boundary
+
+- Public repository only unless a separate private scope is explicitly agreed.
+- No credentials, account access, cookies, private keys, production access, or private customer data.
+- Suspicious values must be redacted before publication or storage.
 
 ## Redaction Note
 

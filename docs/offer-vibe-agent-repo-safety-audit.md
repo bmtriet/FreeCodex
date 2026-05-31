@@ -11,6 +11,8 @@ Fast AI-built apps can launch before their safety basics catch up. This offer is
 - Vibe-app risk hints such as frontend-exposed secret names, Supabase service-role confusion, wildcard CORS, and webhook signature review prompts.
 - A prioritized fix list.
 
+See `reports/samples/vibe-agent-demo-audit.md` for a synthetic public-safe example of the report shape and finding style.
+
 ## Pricing
 
 - Standard report-only audit: USD 49.
