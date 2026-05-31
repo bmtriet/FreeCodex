@@ -8,9 +8,9 @@ This file is generated from public sent logs only. It never posts outreach and d
 
 | Metric | Value |
 | --- | ---: |
-| Generated at UTC | 2026-05-25T14:23:27Z |
-| Tracked outbound artifacts | 9 |
-| Pull requests tracked | 5 |
+| Generated at UTC | 2026-05-31T20:04:45Z |
+| Tracked outbound artifacts | 10 |
+| Pull requests tracked | 6 |
 | Issue comments tracked | 4 |
 | Live GitHub lookup | enabled |
 | Live fetch failures | 0 |
@@ -20,11 +20,12 @@ This file is generated from public sent logs only. It never posts outreach and d
 | Kind | Source | URL | Thread | State | Merged | Issue Comments | Review Comments | Last Updated | Notes |
 | --- | --- | --- | --- | --- | --- | ---: | ---: | --- | --- |
 | issue_comment | leads/sent/2026-05-24-github-outreach-001.md | https://github.com/Forgia-Labs/forgia/issues/17#issuecomment-4527520156 | https://github.com/Forgia-Labs/forgia/issues/17 | OPEN | - | 2 | - | 2026-05-24T05:41:00Z | parent issue state only |
-| issue_comment | leads/sent/2026-05-24-github-outreach-001.md | https://github.com/open-gsd/get-shit-done-redux/issues/52#issuecomment-4527520911 | https://github.com/open-gsd/get-shit-done-redux/issues/52 | OPEN | - | 3 | - | 2026-05-24T05:41:26Z | parent issue state only |
+| issue_comment | leads/sent/2026-05-24-github-outreach-001.md | https://github.com/open-gsd/get-shit-done-redux/issues/52#issuecomment-4527520911 | https://github.com/open-gsd/get-shit-done-redux/issues/52 | OPEN | - | 4 | - | 2026-05-26T21:03:34Z | parent issue state only |
 | issue_comment | leads/sent/2026-05-24-github-outreach-001.md | https://github.com/vibecoder10/economy-fastforward/issues/448#issuecomment-4527521811 | https://github.com/vibecoder10/economy-fastforward/issues/448 | OPEN | - | 1 | - | 2026-05-24T05:42:01Z | parent issue state only |
 | issue_comment | leads/sent/2026-05-24-github-outreach-002.md | https://github.com/mailpile/python-passcrow/issues/16#issuecomment-4527551073 | https://github.com/mailpile/python-passcrow/issues/16 | OPEN | - | 1 | - | 2026-05-24T05:59:31Z | parent issue state only |
 | pull_request | leads/sent/2026-05-24-github-outreach-002.md | https://github.com/RoshanDavis/whisper/pull/9 | https://github.com/RoshanDavis/whisper/pull/9 | OPEN | False | 2 | 0 | 2026-05-24T06:01:09Z | - |
-| pull_request | leads/sent/2026-05-24-github-outreach-002.md | https://github.com/ag-tech-group/hera-streamer-invitational-2026-web/pull/75 | https://github.com/ag-tech-group/hera-streamer-invitational-2026-web/pull/75 | MERGED | True | 1 | 0 | 2026-05-24T16:08:55Z | - |
-| pull_request | leads/sent/2026-05-24-github-outreach-003.md | https://github.com/inkognitroz/inkognitroz.github.io/pull/167 | https://github.com/inkognitroz/inkognitroz.github.io/pull/167 | OPEN | False | 0 | 0 | 2026-05-24T12:46:56Z | - |
+| pull_request | leads/sent/2026-05-24-github-outreach-002.md | https://github.com/ag-tech-group/hera-streamer-invitational-2026-web/pull/75 | https://github.com/ag-tech-group/hera-streamer-invitational-2026-web/pull/75 | MERGED | True | 1 | 0 | 2026-05-27T10:50:23Z | - |
+| pull_request | leads/sent/2026-05-24-github-outreach-003.md | https://github.com/inkognitroz/inkognitroz.github.io/pull/167 | https://github.com/inkognitroz/inkognitroz.github.io/pull/167 | OPEN | False | 0 | 0 | 2026-05-31T15:19:55Z | - |
 | pull_request | leads/sent/2026-05-25-github-outreach-004.md | https://github.com/lettucebo/CostcoTwPriceMatch/pull/46 | https://github.com/lettucebo/CostcoTwPriceMatch/pull/46 | OPEN | False | 0 | 0 | 2026-05-25T00:44:32Z | - |
 | pull_request | leads/sent/2026-05-25-github-outreach-005.md | https://github.com/Sayap-Garuda-Indah/inventory/pull/45 | https://github.com/Sayap-Garuda-Indah/inventory/pull/45 | OPEN | False | 0 | 0 | 2026-05-25T14:22:33Z | - |
+| pull_request | leads/sent/2026-06-01-github-outreach-006.md | https://github.com/langgenius/dify/pull/36873 | https://github.com/langgenius/dify/pull/36873 | OPEN | False | 0 | 0 | 2026-05-31T20:04:25Z | - |
