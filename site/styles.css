@@ -260,7 +260,8 @@ h3 {
 }
 
 .feature-grid,
-.price-grid {
+.price-grid,
+.proof-grid {
   display: grid;
   gap: 16px;
 }
@@ -443,6 +444,30 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.proof-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.proof-work .section-heading p:last-child,
+.proof-item p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.proof-item {
+  min-height: 188px;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 32px rgba(15, 36, 51, 0.08);
+}
+
+.proof-item code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.9em;
+}
+
 .price {
   padding: 24px;
 }
@@ -518,6 +543,7 @@ h3 {
   .feature-grid,
   .signal-list,
   .price-grid,
+  .proof-grid,
   .split-section,
   .request {
     grid-template-columns: 1fr 1fr;
@@ -593,7 +619,8 @@ h3 {
 
   .feature-grid,
   .signal-list,
-  .price-grid {
+  .price-grid,
+  .proof-grid {
     grid-template-columns: 1fr;
   }
 

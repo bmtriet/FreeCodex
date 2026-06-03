@@ -69,6 +69,8 @@ REQUIRED_PATHS = [
     "memory/operating-notes.md",
     "skills/pipeline/README.md",
     "skills/pipeline/public-safe-booking-funnel.md",
+    "skills/pipeline/public-security-policy-pr.md",
+    "skills/pipeline/webcrypto-session-key-hardening.md",
     ".github/workflows/validate.yml",
     ".github/workflows/pages.yml",
     ".github/ISSUE_TEMPLATE/audit-fit-check.yml",
