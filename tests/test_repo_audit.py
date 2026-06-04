@@ -3,6 +3,7 @@ from __future__ import annotations
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 import sys
 
@@ -14,6 +15,7 @@ import repo_audit  # noqa: E402
 
 import llm_gateway  # noqa: E402
 import scout_leads  # noqa: E402
+import scout_big_repos  # noqa: E402
 import mission_control  # noqa: E402
 import llm_coworker  # noqa: E402
 
@@ -322,6 +324,108 @@ class RepoAuditTests(unittest.TestCase):
         url = "https://github.com/example/project/pull/7#discussion_r1"
 
         self.assertEqual(scout_leads.repo_from_github_url(url), "example/project")
+
+    def test_big_repo_candidate_compact_includes_scale(self) -> None:
+        candidate = scout_big_repos.BigCandidate(
+            repo="example/project",
+            repo_url="https://github.com/example/project",
+            stars=12000,
+            forks=1500,
+            pushed_at="2026-06-01T00:00:00Z",
+            security_policy_enabled=True,
+            description="AI workflow platform",
+            issue_title="Add security headers",
+            issue_url="https://github.com/example/project/issues/1",
+            updated_at="2026-06-02T00:00:00Z",
+            labels=["security"],
+            query="example/project:security headers",
+            body="Please add Content-Security-Policy.",
+        )
+
+        compact = candidate.compact()
+
+        self.assertEqual(compact["stars"], 12000)
+        self.assertEqual(compact["forks"], 1500)
+        self.assertEqual(compact["security_policy_enabled"], True)
+        self.assertEqual(compact["body_excerpt"], "")
+
+    def test_big_repo_run_json_wraps_invalid_json(self) -> None:
+        completed = mock.Mock(stdout="not-json")
+
+        with mock.patch.object(scout_big_repos.subprocess, "run", return_value=completed):
+            with self.assertRaises(scout_big_repos.CommandError):
+                scout_big_repos.run_json(["gh", "issue", "list"], timeout=1)
+
+    def test_big_repo_skips_contacted_repo_case_insensitive(self) -> None:
+        args = mock.Mock()
+        args.sent_dir = Path("leads/sent")
+        args.include_contacted_repos = False
+        args.repo = ["flowiseai/flowise"]
+        args.command_timeout = 1
+        args.min_stars = 0
+        args.min_forks = 0
+        args.min_watchers = 0
+        args.term = ["security"]
+        args.per_term = 1
+        args.include_sensitive_hints = False
+        args.max_candidates = 10
+
+        with (
+            mock.patch.object(scout_big_repos.scout_leads, "sent_urls", return_value=set()),
+            mock.patch.object(
+                scout_big_repos.scout_leads,
+                "sent_repos",
+                return_value={"FlowiseAI/Flowise"},
+            ),
+            mock.patch.object(scout_big_repos, "run_json") as run_json,
+        ):
+            candidates, warnings = scout_big_repos.search_big_candidates(args)
+
+        self.assertEqual(candidates, [])
+        self.assertEqual(warnings, [])
+        run_json.assert_not_called()
+
+    def test_big_repo_sort_prefers_security_keyword_and_scale(self) -> None:
+        smaller_security = scout_big_repos.BigCandidate(
+            repo="example/smaller",
+            repo_url="https://github.com/example/smaller",
+            stars=11000,
+            forks=1000,
+            pushed_at="",
+            security_policy_enabled=True,
+            description="",
+            issue_title="Security headers",
+            issue_url="https://github.com/example/smaller/issues/1",
+            updated_at="2026-06-02T00:00:00Z",
+            labels=[],
+            query="security",
+            body="Add CSP and CORS hardening.",
+        )
+        bigger_vague = scout_big_repos.BigCandidate(
+            repo="example/bigger",
+            repo_url="https://github.com/example/bigger",
+            stars=90000,
+            forks=9000,
+            pushed_at="",
+            security_policy_enabled=True,
+            description="",
+            issue_title="UI polish",
+            issue_url="https://github.com/example/bigger/issues/2",
+            updated_at="2026-06-03T00:00:00Z",
+            labels=[],
+            query="security",
+            body="Make the page nicer.",
+        )
+
+        ordered = scout_big_repos.sort_candidates([bigger_vague, smaller_security])
+
+        self.assertEqual(ordered[0].repo, "example/smaller")
+
+    def test_big_repo_prompt_includes_large_repo_policy(self) -> None:
+        prompt = scout_big_repos.build_prompt([], top_n=3)
+
+        self.assertIn("Large active repos are preferred", prompt)
+        self.assertIn("No outreach to minors", prompt)
 
     def test_mission_control_counts_only_sent_threads(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

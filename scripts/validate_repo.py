@@ -50,6 +50,7 @@ REQUIRED_PATHS = [
     "scripts/repo_audit.py",
     "scripts/llm_gateway.py",
     "scripts/scout_leads.py",
+    "scripts/scout_big_repos.py",
     "scripts/llm_coworker.py",
     "scripts/mission_control.py",
     "tests/test_repo_audit.py",

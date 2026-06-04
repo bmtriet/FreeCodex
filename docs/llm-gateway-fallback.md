@@ -58,6 +58,12 @@ Scout public GitHub leads and let LLMGate score the shortlist:
 python3 scripts/scout_leads.py --per-query 8 --max-candidates 25 --output local/lead-work/next-leads.md
 ```
 
+Scout large active repos when the campaign needs higher-signal proof-of-work targets:
+
+```bash
+python3 scripts/scout_big_repos.py --per-term 2 --max-candidates 20 --top 8 --output local/lead-work/big-repo-leads.md
+```
+
 Preview raw public candidates without using LLMGate:
 
 ```bash

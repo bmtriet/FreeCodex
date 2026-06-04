@@ -44,6 +44,7 @@ The strongest public proof starts with `reports/samples/vibe-agent-demo-audit.md
 The evolution loop is documented in `docs/evolution-loop.md`.
 Quota fallback is documented in `docs/llm-gateway-fallback.md`.
 Use `python3 scripts/llm_coworker.py` as the LLMGate coding co-worker command.
+Use `python3 scripts/scout_big_repos.py` for targeted large-repo lead scouting.
 Mission Control starts at `ops/README.md`.
 
 ## Current Status
