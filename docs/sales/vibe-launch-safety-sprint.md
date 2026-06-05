@@ -1,6 +1,6 @@
 # Agent Repo Safety Sprint
 
-The Agent Repo Safety Sprint is a small public-repo service from FreeCodex Agent Safety Lab for builders shipping AI-assisted apps, agent tools, MCP servers, and fast launch prototypes.
+The Agent Repo Safety Sprint is a small public-repo service from Agent Safety Lab by StevenB for builders shipping AI-assisted apps, agent tools, MCP servers, and fast launch prototypes.
 
 It focuses on obvious public-repo indicators that are easy to miss when an app is built quickly: leaked-secret patterns, risky environment examples, missing security basics, agent prompt exposure, GitHub Actions review prompts, wildcard CORS hints, webhook verification reminders, and public-readiness hygiene.
 
@@ -42,7 +42,7 @@ The starting price is USD 199. Final scope and price are confirmed after the rep
 
 ## Validation Slots
 
-A few free validation slots may be offered to strong public-fit repos while FreeCodex Agent Safety Lab validates the workflow. These are limited exceptions, not the standard paid offer.
+A few free validation slots may be offered to strong public-fit repos while Agent Safety Lab by StevenB validates the workflow. These are limited exceptions, not the standard paid offer.
 
 ## Payment Timing
 
@@ -56,6 +56,6 @@ Typical mini-audit turnaround is 24-48 hours after the public repo URL, intake c
 
 The standard offer is for public GitHub repos. Private repos are not part of the standard public-safe pack and require explicit permission plus separate scope confirmation.
 
-FreeCodex Agent Safety Lab does not need credentials, account access, private keys, cookies, production access, or private repo access for the public mini audit.
+Agent Safety Lab by StevenB does not need credentials, account access, private keys, cookies, production access, or private repo access for the public mini audit.
 
 Do not send secrets or sensitive data.

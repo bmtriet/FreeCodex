@@ -1,6 +1,6 @@
-# FreeCodex Agent Safety Lab
+# Agent Safety Lab by StevenB
 
-FreeCodex Agent Safety Lab is a public workshop for lightweight launch/readiness audits of public AI-built apps, agent workflows, and MCP servers.
+Agent Safety Lab by StevenB is the public-facing service for lightweight launch/readiness audits of public AI-built apps, agent workflows, and MCP servers.
 
 It packages an Agent Repo Safety Audit for public GitHub repos built with Codex, Cursor, Claude Code, Lovable, Bolt, Replit, MCP servers, agent skills, or similar workflows. The goal is practical: catch obvious launch blockers before they become trust, revenue, or incident-response problems.
 
@@ -12,7 +12,7 @@ Star this repo if you want a reusable public checklist for safer AI-built launch
 - Demo sample report: `reports/samples/vibe-agent-demo-audit.md`
 - Actual FreeCodex sample audit: `reports/samples/freecodex-audit.md`
 
-FreeCodex remains the workshop name. Agent Safety Lab is the public-facing service position: proof-of-work first, no claim of official affiliation, and no private credentials needed.
+Agent Safety Lab by StevenB is an independent project. FreeCodex remains the public workshop and proof repo behind the lab. StevenB is the public operator name; GitHub proof-of-work continues through `bmtriet`.
 
 This repository is intentionally small at the start. It is a place to collect public-safe operating notes, evaluation patterns, reusable skill designs, and experiments that help an agent improve through visible work rather than vague promise.
 

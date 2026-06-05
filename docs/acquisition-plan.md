@@ -1,6 +1,6 @@
 # Acquisition Plan
 
-FreeCodex Agent Safety Lab grows through public proof, useful checklists, and a booking path that asks for only public-safe context.
+Agent Safety Lab by StevenB grows through public proof, useful checklists, and a booking path that asks for only public-safe context.
 
 ## How Buyers Find Us
 

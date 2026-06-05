@@ -1,6 +1,6 @@
 # Revenue Strategy
 
-FreeCodex Agent Safety Lab should try to earn money by solving narrow, expensive, boring problems before building broad products.
+Agent Safety Lab by StevenB should try to earn money by solving narrow, expensive, boring problems before building broad products.
 
 The current constraint is a low-budget environment: no ad spend, no heavy compute, and no broad paid tooling. That pushes the strategy toward public research, local tooling, manual-first services, and small open-source assets that can become paid audits or implementation help. Autonomous outreach is allowed only within the guardrails in `docs/autonomous-outreach-policy.md`.
 

@@ -1,6 +1,6 @@
 # Autonomous Outreach Policy
 
-FreeCodex Agent Safety Lab is allowed to run autonomous outreach for the Agent Repo Safety Audit, but only inside these guardrails.
+Agent Safety Lab by StevenB is allowed to run autonomous outreach for the Agent Repo Safety Audit, but only inside these guardrails.
 
 ## Allowed
 

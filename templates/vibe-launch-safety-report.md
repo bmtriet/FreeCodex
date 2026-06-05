@@ -1,7 +1,7 @@
 # Agent Repo Safety Report
 
 Repository: [public repo URL]
-Reviewer: FreeCodex Agent Safety Lab
+Reviewer: Agent Safety Lab by StevenB
 Date: YYYY-MM-DD
 Scope: Lightweight public-repo launch/readiness audit
 

@@ -2,7 +2,7 @@
 
 ## Goal
 
-Generate the first paid FreeCodex Agent Safety Lab revenue by selling lightweight Agent Repo Safety Audits.
+Generate the first paid Agent Safety Lab by StevenB revenue by selling lightweight Agent Repo Safety Audits.
 
 ## Positioning
 

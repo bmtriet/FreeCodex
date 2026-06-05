@@ -159,12 +159,24 @@ h3 {
   font-size: 1.08rem;
 }
 
-.lede {
+.lede,
+.operator-note {
   max-width: 640px;
   margin-bottom: 28px;
   color: rgba(255, 255, 255, 0.86);
   font-size: 1.12rem;
   line-height: 1.72;
+}
+
+.operator-note {
+  margin-top: -12px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.96rem;
+}
+
+.operator-note code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.92em;
 }
 
 .actions,

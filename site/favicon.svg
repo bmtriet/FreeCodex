@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FreeCodex">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Agent Safety Lab by StevenB">
   <rect width="64" height="64" rx="14" fill="#0f2433"/>
-  <path d="M18 44V18H46V25H27V30H42V37H27V44Z" fill="#ffffff"/>
+  <path d="M19 43V36H35C38 36 40 35 40 33C40 31 38 30 34 30H29C22 30 18 26 18 20C18 13 24 9 33 9H45V16H31C28 16 26 17 26 20C26 22 28 23 32 23H37C44 23 48 27 48 33C48 40 43 43 34 43Z" fill="#ffffff"/>
   <circle cx="48" cy="46" r="7" fill="#1f9f91"/>
 </svg>

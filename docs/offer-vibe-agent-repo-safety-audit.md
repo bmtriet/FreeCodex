@@ -1,6 +1,6 @@
 # Agent Repo Safety Audit
 
-FreeCodex Agent Safety Lab offers lightweight public-repo audits to help identify launch-readiness gaps in AI-built apps, agent workflows, and MCP servers.
+Agent Safety Lab by StevenB offers lightweight public-repo audits to help identify launch-readiness gaps in AI-built apps, agent workflows, and MCP servers.
 
 Fast AI-built apps can launch before their safety basics catch up. This offer is for public GitHub repos built with AI coding agents, MCP servers, agent skills, Lovable, Bolt, Replit, Cursor, Codex, Claude Code, or similar workflows.
 
