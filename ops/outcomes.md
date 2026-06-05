@@ -8,9 +8,9 @@ This file is generated from public sent logs only. It never posts outreach and d
 
 | Metric | Value |
 | --- | ---: |
-| Generated at UTC | 2026-06-04T10:21:24Z |
-| Tracked outbound artifacts | 11 |
-| Pull requests tracked | 6 |
+| Generated at UTC | 2026-06-05T10:36:53Z |
+| Tracked outbound artifacts | 12 |
+| Pull requests tracked | 7 |
 | Issue comments tracked | 5 |
 | Live GitHub lookup | enabled |
 | Live fetch failures | 0 |
@@ -30,3 +30,4 @@ This file is generated from public sent logs only. It never posts outreach and d
 | pull_request | leads/sent/2026-05-25-github-outreach-005.md | https://github.com/Sayap-Garuda-Indah/inventory/pull/45 | https://github.com/Sayap-Garuda-Indah/inventory/pull/45 | OPEN | False | 0 | 0 | 2026-05-25T14:22:33Z | - |
 | pull_request | leads/sent/2026-06-01-github-outreach-006.md | https://github.com/langgenius/dify/pull/36873 | https://github.com/langgenius/dify/pull/36873 | MERGED | True | 0 | 1 | 2026-06-01T01:58:32Z | - |
 | issue_comment | leads/sent/2026-06-04-github-outreach-007.md | https://github.com/open-webui/open-webui/issues/19313#issuecomment-4621211197 | https://github.com/open-webui/open-webui/issues/19313 | OPEN | - | 36 | - | 2026-06-04T10:18:35Z | parent issue state only |
+| pull_request | leads/sent/2026-06-05-github-outreach-008.md | https://github.com/modelcontextprotocol/servers/pull/4282 | https://github.com/modelcontextprotocol/servers/pull/4282 | OPEN | False | 0 | 0 | 2026-06-05T10:35:31Z | - |
