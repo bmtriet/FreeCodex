@@ -261,7 +261,9 @@ h3 {
 
 .feature-grid,
 .price-grid,
-.proof-grid {
+.proof-grid,
+.resource-grid,
+.checklist-grid {
   display: grid;
   gap: 16px;
 }
@@ -272,7 +274,9 @@ h3 {
 
 .feature,
 .price,
-.report-preview {
+.report-preview,
+.resource-grid a,
+.checklist-card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -309,7 +313,9 @@ h3 {
 }
 
 .signal .section-heading p:last-child,
-.use-section p {
+.use-section p,
+.resources .section-heading p,
+.checklist-intro .section-heading p {
   max-width: 760px;
   color: var(--muted);
   line-height: 1.65;
@@ -346,6 +352,42 @@ h3 {
 
 .use-section {
   padding-top: 38px;
+}
+
+.resources {
+  padding-top: 32px;
+}
+
+.resource-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.resource-grid a {
+  display: block;
+  min-height: 148px;
+  padding: 22px;
+  text-decoration: none;
+}
+
+.resource-grid a:hover {
+  border-color: var(--teal);
+}
+
+.resource-grid strong,
+.resource-grid span {
+  display: block;
+}
+
+.resource-grid strong {
+  margin-bottom: 8px;
+  color: var(--navy);
+  font-size: 1.04rem;
+}
+
+.resource-grid span,
+.checklist-card li {
+  color: var(--muted);
+  line-height: 1.62;
 }
 
 .code-card {
@@ -535,6 +577,54 @@ h3 {
   max-width: 820px;
 }
 
+.page-hero {
+  width: min(calc(100% - 48px), var(--max));
+  margin: 0 auto;
+  padding: 92px 0 56px;
+}
+
+.page-hero h1 {
+  color: var(--navy);
+}
+
+.page-hero .lede {
+  color: var(--muted);
+}
+
+.page-hero .button-secondary {
+  color: var(--navy);
+  border-color: var(--line);
+  background: #ffffff;
+}
+
+.checklist-intro {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.checklist-grid {
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 24px;
+}
+
+.checklist-card {
+  min-height: 308px;
+  padding: 24px;
+}
+
+.checklist-card h2 {
+  font-size: 1.25rem;
+}
+
+.checklist-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.checklist-card li + li {
+  margin-top: 10px;
+}
+
 @media (max-width: 920px) {
   h1 {
     font-size: 3.2rem;
@@ -544,6 +634,8 @@ h3 {
   .signal-list,
   .price-grid,
   .proof-grid,
+  .resource-grid,
+  .checklist-grid,
   .split-section,
   .request {
     grid-template-columns: 1fr 1fr;
@@ -573,8 +665,9 @@ h3 {
 
   .nav {
     width: 100%;
-    justify-content: space-between;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 14px;
   }
 
   .hero {
@@ -620,7 +713,9 @@ h3 {
   .feature-grid,
   .signal-list,
   .price-grid,
-  .proof-grid {
+  .proof-grid,
+  .resource-grid,
+  .checklist-grid {
     grid-template-columns: 1fr;
   }
 

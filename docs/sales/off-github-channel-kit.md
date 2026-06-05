@@ -4,6 +4,8 @@ This kit helps FreeCodex Agent Safety Lab sell the Agent Repo Safety Audit outsi
 
 Use this for short, public-safe, manual-first outreach. Do not overclaim. Do not spam. Do not ask for secrets, credentials, cookies, tokens, or account access.
 
+The finalized Ko-fi listing copy lives in `docs/sales/kofi-service-listing.md`. Keep this file as the channel strategy and template kit.
+
 ## Priority Channels
 
 Prioritize channels that match the current offer and can be used without ad spend:

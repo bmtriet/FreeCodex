@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A lightweight public-repo checklist for AI-built apps, agent workflows, and MCP projects before launch: secrets, env handling, auth, webhooks, CORS, CI, docs, and agent permissions.">
+    <link rel="canonical" href="https://bmtriet.github.io/FreeCodex/ai-app-launch-safety-checklist.html">
+    <meta property="og:title" content="AI App Launch Safety Checklist for Public Repos">
+    <meta property="og:description" content="Practical public-repo checks before launching AI-built apps, agent workflows, and MCP projects.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bmtriet.github.io/FreeCodex/ai-app-launch-safety-checklist.html">
+    <meta property="og:image" content="https://bmtriet.github.io/FreeCodex/assets/audit-workbench.svg">
+    <title>AI App Launch Safety Checklist for Public Repos</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="index.html" aria-label="FreeCodex home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span>FreeCodex Agent Safety Lab</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#scope">Scope</a>
+        <a href="ai-app-launch-safety-checklist.html">Checklist</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#request">Request</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-labelledby="checklist-title">
+        <p class="eyebrow">Public repo checklist</p>
+        <h1 id="checklist-title">AI App Launch Safety Checklist for Public Repos</h1>
+        <p class="lede">
+          A practical pre-launch pass for AI-built apps, agent workflows, and MCP projects.
+          No credentials are needed. This is not a certified pentest.
+        </p>
+        <div class="actions" aria-label="Checklist actions">
+          <a class="button button-primary" href="https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml">Request a fit check</a>
+          <a class="button button-secondary" href="https://github.com/bmtriet/FreeCodex">Run it locally</a>
+        </div>
+      </section>
+
+      <section class="section checklist-intro" aria-labelledby="who-title">
+        <div class="section-heading">
+          <p class="eyebrow">Who this is for</p>
+          <h2 id="who-title">Use it before a public launch, demo, or funding conversation.</h2>
+          <p>
+            The checklist is meant for public GitHub repos built quickly with coding agents,
+            app builders, MCP servers, Supabase/Firebase backends, API integrations, or webhook-heavy flows.
+          </p>
+        </div>
+      </section>
+
+      <section class="section checklist-grid" aria-label="Launch safety checklist">
+        <article class="checklist-card">
+          <h2>Secrets and env handling</h2>
+          <ul>
+            <li>No real tokens, API keys, cookies, private keys, or credentials in tracked files.</li>
+            <li>Examples use safe placeholders and explain required env variables.</li>
+            <li>Frontend code does not reference server-only secret names.</li>
+            <li>Git history and generated reports are reviewed before launch announcements.</li>
+          </ul>
+        </article>
+
+        <article class="checklist-card">
+          <h2>Auth and tenant isolation</h2>
+          <ul>
+            <li>Routes that read or write user data check ownership or tenant scope.</li>
+            <li>Admin paths are not protected only by hidden buttons or client-side checks.</li>
+            <li>Supabase/Firebase policies are documented well enough for review.</li>
+            <li>Sample data cannot be confused with production customer data.</li>
+          </ul>
+        </article>
+
+        <article class="checklist-card">
+          <h2>Webhooks and API boundaries</h2>
+          <ul>
+            <li>Webhook handlers mention signature verification or a clear equivalent control.</li>
+            <li>Public API routes validate method, content type, and expected fields.</li>
+            <li>Errors avoid exposing stack traces, tokens, or provider payloads.</li>
+            <li>Rate-sensitive flows have at least a basic abuse plan.</li>
+          </ul>
+        </article>
+
+        <article class="checklist-card">
+          <h2>Browser security basics</h2>
+          <ul>
+            <li>CORS is not wildcarded for credentialed or sensitive endpoints.</li>
+            <li>Static sites have a plan for CSP, frame, referrer, and MIME-related headers.</li>
+            <li>Client config exposes only public identifiers, not service-role keys.</li>
+            <li>Preview and production origins are documented separately.</li>
+          </ul>
+        </article>
+
+        <article class="checklist-card">
+          <h2>Agent, MCP, and tool permissions</h2>
+          <ul>
+            <li>Agent instructions do not ask tools to ignore policies or leak secrets.</li>
+            <li>MCP configs avoid broad filesystem, shell, or network access by default.</li>
+            <li>Workflows that pass issue or PR text into agents treat that text as untrusted.</li>
+            <li>Dangerous tool actions require explicit maintainer intent.</li>
+          </ul>
+        </article>
+
+        <article class="checklist-card">
+          <h2>Public readiness files</h2>
+          <ul>
+            <li>README explains setup, expected env variables, and safe local usage.</li>
+            <li>LICENSE, SECURITY, gitignore, and CI are present for public launch trust.</li>
+            <li>Dependency manifests are committed and lockfiles are intentional.</li>
+            <li>Known limitations are documented without exposing sensitive details.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="split-section use-section" aria-labelledby="self-check-title">
+        <div>
+          <p class="eyebrow">Self-check</p>
+          <h2 id="self-check-title">Run the lightweight audit locally first.</h2>
+          <p>
+            The deterministic checks are intentionally public and local. They do not replace
+            manual review, but they catch enough boring launch gaps to be worth running.
+          </p>
+        </div>
+        <div class="code-card" aria-label="Local audit commands">
+          <pre><code>git clone https://github.com/bmtriet/FreeCodex.git
+cd FreeCodex
+python3 scripts/validate_repo.py
+python3 scripts/repo_audit.py audit --path . \
+  --output local-audit.md</code></pre>
+          <a class="text-link" href="https://github.com/bmtriet/FreeCodex">Open the GitHub repo</a>
+        </div>
+      </section>
+
+      <section class="request" aria-labelledby="request-title">
+        <div>
+          <p class="eyebrow">When to request</p>
+          <h2 id="request-title">Ask for a review when launch risk matters more than speed.</h2>
+          <p>
+            Good fits handle auth, payments, user data, APIs, webhooks, MCP tools, or agent workflows.
+            Send a public repo URL and launch context only. Do not send secrets or account access.
+          </p>
+        </div>
+        <div class="request-actions">
+          <a class="button button-primary" href="https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml">Open fit-check issue</a>
+          <a class="button button-secondary" href="https://github.com/bmtriet/FreeCodex/blob/main/reports/samples/vibe-agent-demo-audit.md">View sample report</a>
+        </div>
+      </section>
+
+      <section class="disclaimer" aria-labelledby="boundary-title">
+        <h2 id="boundary-title">Boundary</h2>
+        <p>
+          This is a lightweight launch/readiness checklist. It is not a certified penetration
+          test, legal advice, compliance guarantee, or proof that a repository is secure.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

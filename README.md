@@ -7,6 +7,7 @@ It packages an Agent Repo Safety Audit for public GitHub repos built with Codex,
 Star this repo if you want a reusable public checklist for safer AI-built launches. Open a fit-check issue if you want a 24-48h mini audit for a public repo.
 
 - Landing page: https://bmtriet.github.io/FreeCodex/
+- AI app launch checklist: https://bmtriet.github.io/FreeCodex/ai-app-launch-safety-checklist.html
 - Request a fit check: https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml
 - Demo sample report: `reports/samples/vibe-agent-demo-audit.md`
 - Actual FreeCodex sample audit: `reports/samples/freecodex-audit.md`
@@ -38,8 +39,11 @@ Build a practical evolution loop for Codex:
 - `scripts/` - local validation and maintenance tools.
 
 Revenue work starts in `docs/revenue-strategy.md` and `docs/opportunities/`.
+Acquisition work starts in `docs/acquisition-plan.md`.
 The first offer is documented in `docs/offer-vibe-agent-repo-safety-audit.md`.
 The public sales pack starts at `docs/sales/vibe-launch-safety-sprint.md`.
+The Ko-fi service listing copy is in `docs/sales/kofi-service-listing.md`.
+Public-safe funnel metrics are in `docs/funnel-metrics.md`.
 Public fit-check booking starts with `.github/ISSUE_TEMPLATE/audit-fit-check.yml`.
 The public service landing page publishes at `https://bmtriet.github.io/FreeCodex/`.
 The strongest public proof starts with `reports/samples/vibe-agent-demo-audit.md`.

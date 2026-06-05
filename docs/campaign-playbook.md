@@ -19,6 +19,8 @@ The offer is not "AI security magic." It is a fast, practical pre-launch review 
 
 For non-GitHub channels, use `docs/sales/off-github-channel-kit.md` for Ko-fi service copy, community comment templates, marketplace gig copy, and weekly channel discipline.
 
+For the public acquisition map, use `docs/acquisition-plan.md`. For privacy-preserving performance tracking, use `docs/funnel-metrics.md` and `templates/weekly-acquisition-summary.md`.
+
 ## Lead Filters
 
 Prioritize leads that show at least two signals:
@@ -42,6 +44,7 @@ Avoid:
 - Prefer public GitHub issues/discussions and public launch-feedback threads.
 - No repeated follow-up unless the recipient responds.
 - Log every sent message under `leads/sent/`.
+- Include the public-safe `Funnel Status` block from `leads/sent/README.md`.
 
 ## Delivery Standard
 

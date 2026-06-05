@@ -23,4 +23,5 @@ For later paid audits, report-only is USD 49 and bounded fixes start at USD 199 
 - Send only when the target satisfies `docs/autonomous-outreach-policy.md`.
 - Personalize one sentence to the public project or thread.
 - Log sent messages under `leads/sent/`.
+- Include a public-safe funnel status block from `leads/sent/README.md`.
 - For autonomous use, respect the 3-message-per-run limit.
