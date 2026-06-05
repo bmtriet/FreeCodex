@@ -1,4 +1,4 @@
-# Vibe/Agent Repo Safety Audit Demo
+# Agent Repo Safety Audit Demo
 
 Date: 2026-05-31
 Repository: synthetic public demo repo

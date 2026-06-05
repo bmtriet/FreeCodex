@@ -1,6 +1,6 @@
 # Off-GitHub Channel Kit
 
-This kit helps FreeCodex sell the Vibe/Agent Repo Safety Audit outside GitHub without breaking the outreach guardrails in `docs/autonomous-outreach-policy.md`.
+This kit helps FreeCodex Agent Safety Lab sell the Agent Repo Safety Audit outside GitHub without breaking the outreach guardrails in `docs/autonomous-outreach-policy.md`.
 
 Use this for short, public-safe, manual-first outreach. Do not overclaim. Do not spam. Do not ask for secrets, credentials, cookies, tokens, or account access.
 
@@ -52,7 +52,7 @@ Suggested target: `https://ko-fi.com/freecodex`
 
 ### Service Title
 
-Vibe/Agent Repo Safety Audit
+Agent Repo Safety Audit
 
 ### Short Subtitle
 

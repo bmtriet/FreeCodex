@@ -1,8 +1,8 @@
-# FreeCodex
+# FreeCodex Agent Safety Lab
 
-FreeCodex is a public workshop and launch-safety lab for AI-built repositories.
+FreeCodex Agent Safety Lab is a public workshop for lightweight launch/readiness audits of public AI-built apps, agent workflows, and MCP servers.
 
-It packages a lightweight Vibe/Agent Repo Safety Audit for public GitHub repos built with Codex, Cursor, Claude Code, Lovable, Bolt, Replit, MCP servers, agent skills, or similar workflows. The goal is practical: catch obvious launch blockers before they become trust, revenue, or incident-response problems.
+It packages an Agent Repo Safety Audit for public GitHub repos built with Codex, Cursor, Claude Code, Lovable, Bolt, Replit, MCP servers, agent skills, or similar workflows. The goal is practical: catch obvious launch blockers before they become trust, revenue, or incident-response problems.
 
 Star this repo if you want a reusable public checklist for safer AI-built launches. Open a fit-check issue if you want a 24-48h mini audit for a public repo.
 
@@ -10,6 +10,8 @@ Star this repo if you want a reusable public checklist for safer AI-built launch
 - Request a fit check: https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml
 - Demo sample report: `reports/samples/vibe-agent-demo-audit.md`
 - Actual FreeCodex sample audit: `reports/samples/freecodex-audit.md`
+
+FreeCodex remains the workshop name. Agent Safety Lab is the public-facing service position: proof-of-work first, no claim of official affiliation, and no private credentials needed.
 
 This repository is intentionally small at the start. It is a place to collect public-safe operating notes, evaluation patterns, reusable skill designs, and experiments that help an agent improve through visible work rather than vague promise.
 

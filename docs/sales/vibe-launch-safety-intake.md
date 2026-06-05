@@ -1,4 +1,4 @@
-# Vibe Launch Safety Intake
+# Agent Repo Safety Intake
 
 Use this intake after a prospect gives a positive reply or explicitly asks for the audit.
 
@@ -15,7 +15,7 @@ Do not ask for secrets, passwords, tokens, cookies, private keys, private logs, 
 7. Do you want the USD 49 report-only mini audit, or are you also open to a bounded fix sprint after the report?
 8. Are there areas you want excluded from review?
 9. Are you okay with a public-safe PR if small fixes are possible?
-10. Can FreeCodex reference the repo as anonymized proof-of-work, with no sensitive details?
+10. Can FreeCodex Agent Safety Lab reference the repo as anonymized proof-of-work, with no sensitive details?
 
 ## Internal Triage
 

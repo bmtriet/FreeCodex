@@ -1,6 +1,6 @@
-name: Vibe/Agent Repo Safety Audit fit check
+name: Agent Repo Safety Audit fit check
 description: Request a public-safe fit check for a public AI-built app or agent repo.
-title: "Vibe/Agent Repo Safety Audit fit check"
+title: "Agent Repo Safety Audit fit check"
 body:
   - type: markdown
     attributes:

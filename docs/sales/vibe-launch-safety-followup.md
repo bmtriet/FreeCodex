@@ -1,4 +1,4 @@
-# Vibe Launch Safety Follow-Up
+# Agent Repo Safety Follow-Up
 
 Use this only after a positive reply, an explicit request for scope, or consent to continue.
 

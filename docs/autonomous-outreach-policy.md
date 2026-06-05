@@ -1,6 +1,6 @@
 # Autonomous Outreach Policy
 
-FreeCodex is allowed to run autonomous outreach for the Vibe/Agent Repo Safety Audit, but only inside these guardrails.
+FreeCodex Agent Safety Lab is allowed to run autonomous outreach for the Agent Repo Safety Audit, but only inside these guardrails.
 
 ## Allowed
 

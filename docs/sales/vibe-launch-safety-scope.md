@@ -1,4 +1,4 @@
-# Vibe Launch Safety Scope
+# Agent Repo Safety Scope
 
 This scope keeps the offer simple enough to deliver quickly and honest enough to sell safely.
 

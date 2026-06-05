@@ -2,7 +2,7 @@
 
 ## Goal
 
-Generate the first paid FreeCodex revenue by selling lightweight Vibe/Agent Repo Safety Audits.
+Generate the first paid FreeCodex Agent Safety Lab revenue by selling lightweight Agent Repo Safety Audits.
 
 ## Positioning
 

@@ -1,6 +1,6 @@
-# Vibe App Launch Safety Sprint
+# Agent Repo Safety Sprint
 
-The Vibe App Launch Safety Sprint is a small public-repo service for builders shipping AI-assisted apps, agent tools, MCP servers, and fast launch prototypes.
+The Agent Repo Safety Sprint is a small public-repo service from FreeCodex Agent Safety Lab for builders shipping AI-assisted apps, agent tools, MCP servers, and fast launch prototypes.
 
 It focuses on obvious public-repo indicators that are easy to miss when an app is built quickly: leaked-secret patterns, risky environment examples, missing security basics, agent prompt exposure, GitHub Actions review prompts, wildcard CORS hints, webhook verification reminders, and public-readiness hygiene.
 
@@ -25,7 +25,7 @@ You get:
 - Public-repo checks for obvious leaked-secret patterns.
 - Launch-readiness checks for README, license, security policy, gitignore, CI, dependency metadata, and environment examples.
 - Agent/MCP/skill risk notes when relevant.
-- Vibe-app risk hints such as frontend-exposed secret names, Supabase service-role confusion, wildcard CORS, and webhook signature review prompts.
+- AI-app risk hints such as frontend-exposed secret names, Supabase service-role confusion, wildcard CORS, and webhook signature review prompts.
 - Prioritized next actions with redacted evidence.
 
 ### USD 199+ Fix Sprint
@@ -42,7 +42,7 @@ The starting price is USD 199. Final scope and price are confirmed after the rep
 
 ## Validation Slots
 
-A few free validation slots may be offered to strong public-fit repos while FreeCodex validates the workflow. These are limited exceptions, not the standard paid offer.
+A few free validation slots may be offered to strong public-fit repos while FreeCodex Agent Safety Lab validates the workflow. These are limited exceptions, not the standard paid offer.
 
 ## Payment Timing
 
@@ -56,6 +56,6 @@ Typical mini-audit turnaround is 24-48 hours after the public repo URL, intake c
 
 The standard offer is for public GitHub repos. Private repos are not part of the standard public-safe pack and require explicit permission plus separate scope confirmation.
 
-FreeCodex does not need credentials, account access, private keys, cookies, production access, or private repo access for the public mini audit.
+FreeCodex Agent Safety Lab does not need credentials, account access, private keys, cookies, production access, or private repo access for the public mini audit.
 
 Do not send secrets or sensitive data.

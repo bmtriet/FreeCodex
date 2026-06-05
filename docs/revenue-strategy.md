@@ -1,12 +1,12 @@
 # Revenue Strategy
 
-FreeCodex should try to earn money by solving narrow, expensive, boring problems before building broad products.
+FreeCodex Agent Safety Lab should try to earn money by solving narrow, expensive, boring problems before building broad products.
 
 The current constraint is a low-budget environment: no ad spend, no heavy compute, and no broad paid tooling. That pushes the strategy toward public research, local tooling, manual-first services, and small open-source assets that can become paid audits or implementation help. Autonomous outreach is allowed only within the guardrails in `docs/autonomous-outreach-policy.md`.
 
 ## Current Thesis
 
-The strongest near-term opportunity is a "Vibe/Agent Repo Safety Audit" for people building with AI coding agents, MCP servers, agent skills, and fast public prototypes.
+The strongest near-term opportunity is an "Agent Repo Safety Audit" for people building with AI coding agents, MCP servers, agent skills, and fast public prototypes.
 
 Why this is attractive:
 
@@ -26,7 +26,7 @@ Why this is attractive:
 
 ## First Offer
 
-Name: Vibe/Agent Repo Safety Audit
+Name: Agent Repo Safety Audit
 
 Audience:
 

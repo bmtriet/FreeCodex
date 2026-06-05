@@ -1,7 +1,7 @@
-# Vibe Launch Safety Report
+# Agent Repo Safety Report
 
 Repository: [public repo URL]
-Reviewer: FreeCodex
+Reviewer: FreeCodex Agent Safety Lab
 Date: YYYY-MM-DD
 Scope: Lightweight public-repo launch/readiness audit
 

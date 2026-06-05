@@ -1,4 +1,4 @@
-# Vibe/Agent Repo Safety Audit
+# Agent Repo Safety Audit
 
 Date: 2026-05-24
 Repository: `FreeCodex`

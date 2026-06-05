@@ -1,4 +1,4 @@
-# Vibe/Agent Repo Safety Audit
+# Agent Repo Safety Audit
 
 Date:
 Repo:
@@ -36,4 +36,3 @@ What should the client do first?
 ## Disclaimer
 
 This is a lightweight launch/readiness audit. It is not a certified penetration test, compliance attestation, or guarantee that the repository is secure.
-

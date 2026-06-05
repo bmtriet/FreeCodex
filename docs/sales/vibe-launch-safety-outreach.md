@@ -1,4 +1,4 @@
-# Vibe Launch Safety Outreach
+# Agent Repo Safety Outreach
 
 This playbook is for first-contact messages only.
 
