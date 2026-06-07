@@ -17,15 +17,16 @@ See `reports/samples/vibe-agent-demo-audit.md` for a synthetic public-safe examp
 
 ## Pricing
 
-- Standard report-only audit: USD 49.
-- Report plus bounded small fixes: starts at USD 199 after the report is delivered and scope is confirmed.
-- A few free validation slots may be available for strong public-fit repos while the workflow is being validated.
+- Free fit check: quick scope review for one public repo; no full report.
+- Starter report: USD 49 for one small public repo, deterministic checks, concise notes, and top launch risks.
+- Standard audit: USD 149 for a manual launch-readiness review, prioritized markdown report, and concrete fix plan.
+- Report plus one bounded public fix PR: starts at USD 299 and includes the standard audit plus one small public PR, confirmed only after fit and scope review.
 
-First-contact outreach does not include payment links. The public landing page may list pricing and the payment destination for ready buyers, but paid work starts only after a positive reply, scope confirmation, and consent to proceed.
+First-contact outreach does not include payment links. The public landing page may list pricing and the payment destination for ready buyers, but paid work starts only after a positive reply, fit confirmation, scope confirmation, and consent to proceed.
 
 ## Turnaround
 
-Typical lightweight report turnaround is 24-48 hours after repo permission and payment, if payment applies, subject to current queue.
+Typical lightweight report turnaround is 24-48 hours after repo permission and payment, if payment applies, subject to current queue. Rush delivery may require a separate scope decision.
 
 ## Scope
 
@@ -57,7 +58,7 @@ Include:
 - Launch context.
 - Any specific concern, such as secrets, MCP config, agent workflow, Supabase, auth, or webhooks.
 
-First contact stays public-safe and does not require payment. If the repo is a fit, paid work starts only after a positive reply, scope confirmation, and consent to proceed.
+First contact stays public-safe and does not require payment. Listed prices are for public repos. If the repo is a fit, paid work starts only after a positive reply, scope confirmation, and consent to proceed.
 
 Do not send secrets, passwords, tokens, cookies, or private keys.
 

@@ -46,8 +46,10 @@ Deliverable:
 Pricing hypothesis:
 
 - Free public sample for FreeCodex itself.
-- USD 49 for a lightweight report on one public repo.
-- USD 199+ for report plus small fixes, depending on scope.
+- Free fit check for public repo scope.
+- USD 49 for a starter report on one small public repo.
+- USD 149 for the standard manual launch-readiness audit.
+- USD 299+ for report plus one bounded public fix PR, depending on scope.
 
 No revenue is assumed. The first goal is to validate whether anyone will pay for the audit.
 

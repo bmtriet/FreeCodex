@@ -75,6 +75,7 @@ REQUIRED_PATHS = [
     "skills/pipeline/README.md",
     "skills/pipeline/public-safe-booking-funnel.md",
     "skills/pipeline/public-security-policy-pr.md",
+    "skills/pipeline/mcp-user-scoped-secret-design.md",
     "skills/pipeline/webcrypto-session-key-hardening.md",
     "site/index.html",
     "site/styles.css",

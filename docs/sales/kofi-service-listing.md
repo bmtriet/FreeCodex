@@ -14,9 +14,13 @@ Lightweight pre-launch safety review for public AI-built app repos.
 
 ## Price
 
-USD 49 report-only.
+Free fit check is available before purchase through the GitHub issue form. Ko-fi is for confirmed paid report or fix-PR scopes.
 
-Report plus small bounded fixes starts at USD 199 after report delivery and separate scope confirmation.
+Starter report: USD 49.
+
+Standard audit: USD 149.
+
+Report plus one bounded public fix PR starts at USD 299 and includes the standard audit plus one small public PR, confirmed only after fit and scope review.
 
 ## Description
 
@@ -35,7 +39,7 @@ What you get:
 - one concise report for one public repo
 - redacted evidence only
 - typical turnaround: 24-48 hours, queue permitting
-- optional small-fix scope after the report, only when bounded and high-confidence
+- optional one-PR package only when bounded and high-confidence
 
 Boundaries:
 

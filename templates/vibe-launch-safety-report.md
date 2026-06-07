@@ -35,7 +35,7 @@ This is a lightweight launch/readiness review, not a certified penetration test,
 2. [Action]
 3. [Action]
 
-## Fix Sprint Candidates
+## One Fix PR Candidates
 
 - [Bounded fix that could be done in one PR or patch set]
 

@@ -1,6 +1,6 @@
 # Opportunity Brief
 
-Name: Agent Launch Safety Mini Audit
+Name: Agent Launch Safety Audit
 Date: 2026-05-31
 Status: active thesis refinement
 
@@ -47,7 +47,7 @@ This pain is tied to money and deadlines because the failure mode is launch dela
 
 ## Offer
 
-A lightweight manual-first mini audit for one public repo:
+A lightweight manual-first audit for one public repo:
 
 - deterministic repo checks
 - manual review of tenant-isolation, agent/MCP, and launch-risk patterns

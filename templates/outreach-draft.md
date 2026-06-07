@@ -16,7 +16,7 @@ This is not a certified pentest, and no credentials or account access are needed
 
 Not for first-contact messages.
 
-For later paid audits, report-only is USD 49 and bounded fixes start at USD 199 after the report is delivered. Do not include payment links in first-contact outreach. Use `docs/sales/vibe-launch-safety-followup.md` only after a positive reply, scope confirmation, and consent to proceed.
+For later paid audits, the starter report is USD 49, the standard audit is USD 149, and the standard-audit-plus-one-PR package starts at USD 299 after fit and scope confirmation. Do not include payment links in first-contact outreach. Use `docs/sales/vibe-launch-safety-followup.md` only after a positive reply, scope confirmation, and consent to proceed.
 
 ## Autonomous Use Rules
 

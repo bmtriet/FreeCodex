@@ -47,7 +47,7 @@ Do not include payment links in the first contact.
 
 The PR should fix one clear issue or add one helpful guardrail. It should not become a full unpaid audit or broad fix sprint.
 
-If the repo has many findings, deliver the small PR and offer the mini audit scope after the maintainer shows interest.
+If the repo has many findings, deliver the small PR and offer a fit check or report scope only after the maintainer shows interest.
 
 ## Tracking
 

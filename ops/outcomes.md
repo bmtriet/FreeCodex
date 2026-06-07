@@ -8,10 +8,10 @@ This file is generated from public sent logs only. It never posts outreach and d
 
 | Metric | Value |
 | --- | ---: |
-| Generated at UTC | 2026-06-05T11:50:16Z |
-| Tracked outbound artifacts | 13 |
+| Generated at UTC | 2026-06-07T13:44:16Z |
+| Tracked outbound artifacts | 14 |
 | Pull requests tracked | 8 |
-| Issue comments tracked | 5 |
+| Issue comments tracked | 6 |
 | Live GitHub lookup | enabled |
 | Live fetch failures | 0 |
 
@@ -20,7 +20,7 @@ This file is generated from public sent logs only. It never posts outreach and d
 | Kind | Source | URL | Thread | State | Merged | Issue Comments | Review Comments | Last Updated | Notes |
 | --- | --- | --- | --- | --- | --- | ---: | ---: | --- | --- |
 | issue_comment | leads/sent/2026-05-24-github-outreach-001.md | https://github.com/Forgia-Labs/forgia/issues/17#issuecomment-4527520156 | https://github.com/Forgia-Labs/forgia/issues/17 | OPEN | - | 2 | - | 2026-05-24T05:41:00Z | parent issue state only |
-| issue_comment | leads/sent/2026-05-24-github-outreach-001.md | https://github.com/open-gsd/get-shit-done-redux/issues/52#issuecomment-4527520911 | https://github.com/open-gsd/get-shit-done-redux/issues/52 | OPEN | - | 5 | - | 2026-06-01T21:28:46Z | parent issue state only |
+| issue_comment | leads/sent/2026-05-24-github-outreach-001.md | https://github.com/open-gsd/get-shit-done-redux/issues/52#issuecomment-4527520911 | https://github.com/open-gsd/get-shit-done-redux/issues/52 | CLOSED | - | 5 | - | 2026-06-07T05:06:42Z | parent issue state only |
 | issue_comment | leads/sent/2026-05-24-github-outreach-001.md | https://github.com/vibecoder10/economy-fastforward/issues/448#issuecomment-4527521811 | https://github.com/vibecoder10/economy-fastforward/issues/448 | OPEN | - | 1 | - | 2026-05-24T05:42:01Z | parent issue state only |
 | issue_comment | leads/sent/2026-05-24-github-outreach-002.md | https://github.com/mailpile/python-passcrow/issues/16#issuecomment-4527551073 | https://github.com/mailpile/python-passcrow/issues/16 | OPEN | - | 1 | - | 2026-05-24T05:59:31Z | parent issue state only |
 | pull_request | leads/sent/2026-05-24-github-outreach-002.md | https://github.com/RoshanDavis/whisper/pull/9 | https://github.com/RoshanDavis/whisper/pull/9 | MERGED | True | 3 | 0 | 2026-06-01T21:51:00Z | - |
@@ -29,6 +29,7 @@ This file is generated from public sent logs only. It never posts outreach and d
 | pull_request | leads/sent/2026-05-25-github-outreach-004.md | https://github.com/lettucebo/CostcoTwPriceMatch/pull/46 | https://github.com/lettucebo/CostcoTwPriceMatch/pull/46 | OPEN | False | 0 | 0 | 2026-05-25T00:44:32Z | - |
 | pull_request | leads/sent/2026-05-25-github-outreach-005.md | https://github.com/Sayap-Garuda-Indah/inventory/pull/45 | https://github.com/Sayap-Garuda-Indah/inventory/pull/45 | OPEN | False | 0 | 0 | 2026-05-25T14:22:33Z | - |
 | pull_request | leads/sent/2026-06-01-github-outreach-006.md | https://github.com/langgenius/dify/pull/36873 | https://github.com/langgenius/dify/pull/36873 | MERGED | True | 0 | 1 | 2026-06-01T01:58:32Z | - |
-| issue_comment | leads/sent/2026-06-04-github-outreach-007.md | https://github.com/open-webui/open-webui/issues/19313#issuecomment-4621211197 | https://github.com/open-webui/open-webui/issues/19313 | OPEN | - | 36 | - | 2026-06-04T10:18:35Z | parent issue state only |
-| pull_request | leads/sent/2026-06-05-github-outreach-008.md | https://github.com/modelcontextprotocol/servers/pull/4282 | https://github.com/modelcontextprotocol/servers/pull/4282 | OPEN | False | 0 | 0 | 2026-06-05T10:35:31Z | - |
+| issue_comment | leads/sent/2026-06-04-github-outreach-007.md | https://github.com/open-webui/open-webui/issues/19313#issuecomment-4621211197 | https://github.com/open-webui/open-webui/issues/19313 | OPEN | - | 39 | - | 2026-06-07T13:43:10Z | parent issue state only |
+| pull_request | leads/sent/2026-06-05-github-outreach-008.md | https://github.com/modelcontextprotocol/servers/pull/4282 | https://github.com/modelcontextprotocol/servers/pull/4282 | OPEN | False | 1 | 0 | 2026-06-05T14:07:34Z | - |
 | pull_request | leads/sent/2026-06-05-github-outreach-009.md | https://github.com/Aider-AI/aider/pull/5218 | https://github.com/Aider-AI/aider/pull/5218 | OPEN | False | 1 | 0 | 2026-06-05T11:50:03Z | - |
+| issue_comment | leads/sent/2026-06-07-github-outreach-010.md | https://github.com/open-webui/open-webui/issues/19313#issuecomment-4642847395 | https://github.com/open-webui/open-webui/issues/19313 | OPEN | - | 39 | - | 2026-06-07T13:43:10Z | parent issue state only |

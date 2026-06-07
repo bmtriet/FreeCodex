@@ -15,34 +15,48 @@ This is a lightweight launch/readiness review. It is not a certified penetration
 
 ## Offers
 
-### USD 49 Mini Audit
+### Free Fit Check
 
-A report-only review for one public GitHub repository.
+A quick public-scope review for one public repo. This answers whether the repo is a fit and which paid path, if any, makes sense. It is not a full report.
+
+### USD 49 Starter Report
+
+A lightweight report-only review for one small public GitHub repository.
 
 You get:
 
-- One concise markdown report.
+- Deterministic checks.
+- Short markdown notes.
+- Top launch risks and first fix suggestions.
+
+### USD 149 Standard Audit
+
+A manual launch-readiness review for one public GitHub repository.
+
+You get:
+
+- One prioritized markdown report.
 - Public-repo checks for obvious leaked-secret patterns.
 - Launch-readiness checks for README, license, security policy, gitignore, CI, dependency metadata, and environment examples.
 - Agent/MCP/skill risk notes when relevant.
 - AI-app risk hints such as frontend-exposed secret names, Supabase service-role confusion, wildcard CORS, and webhook signature review prompts.
 - Prioritized next actions with redacted evidence.
 
-### USD 199+ Fix Sprint
+### USD 299+ Standard Audit + One Fix PR
 
-A bounded follow-on sprint after a mini audit is delivered.
+A package that includes the standard audit plus one bounded public PR, confirmed only after fit and scope review.
 
 Best fit:
 
-- A few concrete repo fixes can improve launch readiness.
-- The fix can be done in a public PR or patch set.
+- One concrete repo fix can improve launch readiness.
+- The fix can be done in one public PR or patch set.
 - The scope is small enough to define before work starts.
 
-The starting price is USD 199. Final scope and price are confirmed after the report, because not every repo has the same fix surface.
+The starting price is USD 299. Final scope and price are confirmed before payment, because not every repo has the same fix surface.
 
 ## Validation Slots
 
-A few free validation slots may be offered to strong public-fit repos while Agent Safety Lab by StevenB validates the workflow. These are limited exceptions, not the standard paid offer.
+The standard free option is a fit check only and does not include a full report. Rare free validation slots, if offered, are separate exceptions for public proof-of-work opportunities.
 
 ## Payment Timing
 
@@ -50,12 +64,12 @@ First-contact outreach never includes payment links. Payment details are shared 
 
 ## Turnaround
 
-Typical mini-audit turnaround is 24-48 hours after the public repo URL, intake context, and payment status are confirmed, subject to current queue.
+Typical report turnaround is 24-48 hours after the public repo URL, intake context, and payment status are confirmed, subject to current queue.
 
 ## Boundaries
 
 The standard offer is for public GitHub repos. Private repos are not part of the standard public-safe pack and require explicit permission plus separate scope confirmation.
 
-Agent Safety Lab by StevenB does not need credentials, account access, private keys, cookies, production access, or private repo access for the public mini audit.
+Agent Safety Lab by StevenB does not need credentials, account access, private keys, cookies, production access, or private repo access for the public report path.
 
 Do not send secrets or sensitive data.

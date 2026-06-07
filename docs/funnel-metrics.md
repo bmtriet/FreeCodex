@@ -23,7 +23,7 @@ Add these fields to each sent outreach log when possible:
 - **Fit-check opened:** A GitHub fit-check issue or equivalent public request for review.
 - **Qualified lead:** A public repo that matches at least two lead filters in `docs/campaign-playbook.md`.
 - **Audit requested:** The builder explicitly asks for a review or accepts an offered validation slot.
-- **Paid conversion:** The buyer agrees to the USD 49 report or a scoped paid fix path after scope confirmation.
+- **Paid conversion:** The buyer agrees to a paid starter report, standard audit, or scoped paid fix path after scope confirmation.
 
 ## Weekly Summary
 

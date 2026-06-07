@@ -50,48 +50,17 @@ Use this positioning consistently:
 
 ## Ko-fi Service Listing Copy
 
-Suggested target: `https://ko-fi.com/freecodex`
+Target: `https://ko-fi.com/freecodex`
 
-### Service Title
+Use the finalized listing copy in `docs/sales/kofi-service-listing.md` as the source of truth for current pricing and buyer instructions.
 
-Agent Repo Safety Audit
-
-### Short Subtitle
-
-Lightweight pre-launch safety review for public AI-built app repos.
-
-### Description
-
-Shipping fast with AI tools is great until launch basics get missed. I review one public GitHub repo and deliver a concise markdown report focused on obvious risk and launch readiness.
-
-What I check:
-
-- leaked-secret patterns and risky env examples
-- README, license, security policy, and CI basics
-- auth, webhook, CORS, and Supabase footguns when visible
-- MCP/agent/skill-specific risk notes when relevant
-- prioritized fixes so the next step is obvious
-
-What you get:
-
-- one concise report for one public repo
-- redacted evidence only
-- typical turnaround: 24-48 hours, queue permitting
-
-Boundaries:
-
-- not a certified pentest
-- no compliance attestation
-- no private credentials, tokens, or account access needed
-- no private repo review without explicit permission
-
-First contact should be a short message with your repo URL and launch context. Share the Ko-fi page only after a positive reply or direct request for details.
+First contact should be a short message with the public repo context. Share the Ko-fi page only after a positive reply, direct request for details, or scope confirmation.
 
 ### Optional Ko-fi FAQ Snippets
 
-- **Do you need repo access?** No for public repos on the report-only path.
+- **Do you need repo access?** No for public repos on the standard public path.
 - **Will you log or keep secrets?** No. Suspicious values are redacted in reports.
-- **Do you fix issues too?** Small bounded fixes can be offered after the report and scope confirmation.
+- **Do you fix issues too?** One bounded public fix PR can be offered after the report and scope confirmation.
 
 ## Short Comment Templates
 

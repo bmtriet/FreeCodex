@@ -4,13 +4,42 @@ This scope keeps the offer simple enough to deliver quickly and honest enough to
 
 The standard offer is for public GitHub repos. Private repos are not part of the standard public-safe pack and require explicit permission plus separate scope confirmation.
 
-## USD 49 Mini Audit
+## Free Fit Check
+
+Included:
+
+- Public repo URL review.
+- Quick fit/no-fit decision.
+- Suggested paid path if the repo is a match.
+
+Not included:
+
+- Full markdown report.
+- Manual deep review.
+- Fix implementation.
+
+## USD 49 Starter Report
+
+Included:
+
+- One public GitHub repository.
+- Local deterministic checks.
+- Short markdown notes.
+- Top launch risks and first fix suggestions.
+
+Not included:
+
+- Deep manual review.
+- Fix implementation.
+- Compliance or pentest claims.
+
+## USD 149 Standard Audit
 
 Included:
 
 - One public GitHub repository.
 - Local deterministic checks plus manual review.
-- One markdown report.
+- One prioritized markdown report.
 - Findings labeled by priority and launch impact.
 - Redacted evidence only.
 - Practical fix recommendations.
@@ -33,12 +62,13 @@ Done means:
 - Findings are redacted and prioritized.
 - The client has enough information to decide whether to fix items themselves or request a bounded sprint.
 
-## USD 199+ Fix Sprint
+## USD 299+ Standard Audit + One Fix PR
 
 Included when in scope:
 
 - One public repository.
-- A bounded set of small fixes based on the delivered audit.
+- Standard audit deliverable.
+- One bounded set of small fixes based on the delivered audit.
 - One PR or patch set.
 - Updated notes showing what changed.
 - Repo hygiene improvements such as README, SECURITY, .gitignore, env example, CI, or docs updates.
@@ -57,6 +87,7 @@ Out of scope unless separately agreed:
 
 Done means:
 
+- The standard audit report is delivered.
 - The agreed patch or PR is delivered.
 - The change stays within the confirmed scope.
 - Local checks that are available in the repo have been run or clearly reported as unavailable.

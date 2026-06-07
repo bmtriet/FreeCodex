@@ -32,3 +32,4 @@ A workflow becomes a skill when it has:
 - Public-safe booking funnel: `skills/pipeline/public-safe-booking-funnel.md`.
 - Public security policy PR: `skills/pipeline/public-security-policy-pr.md`.
 - WebCrypto session key hardening: `skills/pipeline/webcrypto-session-key-hardening.md`.
+- MCP user-scoped secret design: `skills/pipeline/mcp-user-scoped-secret-design.md`.

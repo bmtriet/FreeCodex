@@ -15,15 +15,15 @@ To confirm fit, please send:
 2. Launch context and timing
 3. Main stack/hosting
 4. Any auth, payment, webhook, Supabase/Firebase, MCP, or agent workflow areas to pay attention to
-5. Whether you want the USD 49 report-only mini audit, or just want to be considered for a limited validation slot if available
+5. Whether you want the free fit check, USD 49 starter report, or USD 149 standard audit
 ```
 
-## Paid Mini Audit Confirmation
+## Paid Report Confirmation
 
-Use only after the prospect has replied positively, scope has been confirmed for one public repo, and they have consented to proceed with the paid report-only path.
+Use only after the prospect has replied positively, scope has been confirmed for one public repo, and they have consented to proceed with the paid report path.
 
 ```text
-Great. The report-only mini audit is USD 49 for one public repo.
+Great. The starter report is USD 49 for one small public repo. The standard audit is USD 149 when you want a more manual launch-readiness review and concrete fix plan.
 
 Deliverable: a concise markdown report with prioritized launch/readiness findings, redacted evidence, and recommended next actions. This is not a certified pentest or security guarantee, and no credentials or account access are needed.
 
@@ -32,14 +32,14 @@ Payment can be sent here: https://ko-fi.com/freecodex
 After payment, I will review the repo and aim to deliver within 24-48 hours, subject to current queue.
 ```
 
-## Fix Sprint Follow-Up
+## Standard Audit + One Fix PR Follow-Up
 
 Use only after the report has been delivered.
 
 ```text
-Based on the report, I see a bounded fix sprint that could help: [short scope].
+Based on the fit check, I see a bounded fix PR scope that could help: [short scope].
 
-The fix sprint starts at USD 199 and would include [one PR / one patch set / specific small fixes]. It would stay within the public repo and will not require credentials or account access.
+The standard audit plus one bounded public fix PR starts at USD 299 and would include the report plus [one PR / one patch set / specific small fix]. It would stay within the public repo and will not require credentials or account access.
 
 If that scope looks useful, I can confirm the exact deliverable and timeline before starting.
 ```

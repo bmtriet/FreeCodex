@@ -4,7 +4,7 @@ Agent Safety Lab by StevenB is the public-facing service for lightweight launch/
 
 It packages an Agent Repo Safety Audit for public GitHub repos built with Codex, Cursor, Claude Code, Lovable, Bolt, Replit, MCP servers, agent skills, or similar workflows. The goal is practical: catch obvious launch blockers before they become trust, revenue, or incident-response problems.
 
-Star this repo if you want a reusable public checklist for safer AI-built launches. Open a fit-check issue if you want a 24-48h mini audit for a public repo.
+Star this repo if you want a reusable public checklist for safer AI-built launches. Open a fit-check issue if you want a public-repo scope check or paid launch-readiness report.
 
 - Landing page: https://bmtriet.github.io/FreeCodex/
 - AI app launch checklist: https://bmtriet.github.io/FreeCodex/ai-app-launch-safety-checklist.html
