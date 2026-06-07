@@ -2,7 +2,7 @@
 
 Status: candidate
 
-Use this workflow when a large public repository has no visible `SECURITY.md`, but already has or can safely use a private vulnerability reporting channel such as GitHub Security Advisories.
+Use this workflow when a large public repository has no visible `SECURITY.md`, and a public issue or maintainer context shows that reporters need a private vulnerability reporting path.
 
 ## Trigger
 
@@ -10,16 +10,16 @@ Good fits:
 
 - a public issue explicitly asks for a missing security policy
 - GitHub metadata shows no enabled security policy
-- the repository already exposes a private advisory/contact path
+- the repository already exposes, or can reasonably enable, a private advisory/contact path
 - the change can be documentation-only and bounded
 
-Do not use this to disclose vulnerability details, request private access, or invent a security response process for maintainers.
+Do not use this to disclose vulnerability details, request private access, or invent a detailed security response process for maintainers.
 
 ## Inputs
 
 - Public repository URL.
 - Public issue requesting a security policy, if present.
-- Existing private vulnerability reporting path.
+- Existing or requested private vulnerability reporting path.
 - Repository default branch and documentation conventions.
 
 Never include credentials, private reports, exploit details, or confidential vulnerability material.
@@ -27,8 +27,8 @@ Never include credentials, private reports, exploit details, or confidential vul
 ## Workflow
 
 1. Confirm neither `SECURITY.md` nor `.github/SECURITY.md` exists.
-2. Confirm the repository's private vulnerability reporting path from public metadata or docs.
-3. Add a concise `SECURITY.md` that points reporters to the private channel.
+2. Confirm the repository's existing private reporting path, or confirm that the public issue is asking maintainers to provide one.
+3. Add a concise `SECURITY.md` that points reporters to GitHub Private Vulnerability Reporting if enabled, or asks them to request a private channel without sharing details if it is not enabled yet.
 4. Warn reporters not to disclose vulnerabilities in public issues, discussions, or pull requests.
 5. Keep scope to reporting guidance, disclosure etiquette, and update guidance.
 6. Avoid unsupported claims about SLAs, bounties, supported versions, or guaranteed security response.
@@ -40,13 +40,13 @@ Never include credentials, private reports, exploit details, or confidential vul
 git diff --check
 gh api repos/OWNER/REPO/contents/SECURITY.md
 gh api repos/OWNER/REPO/contents/.github/SECURITY.md
-gh repo view OWNER/REPO --json isSecurityPolicyEnabled,contactLinks
+gh repo view OWNER/REPO --json isSecurityPolicyEnabled
 ```
 
 Expected checks:
 
 - existing policy paths return 404 before the PR
-- private reporting channel is verified from public metadata
+- private reporting channel is verified from public metadata, or the source issue explicitly asks maintainers to enable/provide one
 - PR body contains no payment link, credentials, private data, or vulnerability details
 - docs-only diff is small enough for maintainer review
 
@@ -54,7 +54,7 @@ Expected checks:
 
 Stop or revise when:
 
-- no official private reporting channel is visible
+- no official private reporting channel is visible and there is no public issue asking maintainers to provide one
 - a policy already exists in the repo or shared org `.github` repository
 - the proposed text claims unsupported SLA, bounty, or version support
 - the PR would expose vulnerability details or encourage public disclosure
@@ -62,8 +62,11 @@ Stop or revise when:
 
 ## Evidence
 
-This candidate is based on a merged documentation PR in `langgenius/dify`:
+This candidate is based on repeated public-safe documentation PRs:
 
-- Source issue: https://github.com/langgenius/dify/issues/36692
-- Merged PR: https://github.com/langgenius/dify/pull/36873
-- Result: maintainer approved and merged the bounded `SECURITY.md` addition.
+- Dify source issue: https://github.com/langgenius/dify/issues/36692
+- Dify merged PR: https://github.com/langgenius/dify/pull/36873
+- Aider source issue: https://github.com/Aider-AI/aider/issues/5217
+- Aider PR: https://github.com/Aider-AI/aider/pull/5218
+- mem0 source issue: https://github.com/mem0ai/mem0/issues/5385
+- mem0 PR: https://github.com/mem0ai/mem0/pull/5417
