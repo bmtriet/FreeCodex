@@ -28,11 +28,13 @@ Never include credentials, private reports, exploit details, or confidential vul
 
 1. Confirm neither `SECURITY.md` nor `.github/SECURITY.md` exists.
 2. Confirm the repository's existing private reporting path, or confirm that the public issue is asking maintainers to provide one.
-3. Add a concise `SECURITY.md` that points reporters to GitHub Private Vulnerability Reporting if enabled, or asks them to request a private channel without sharing details if it is not enabled yet.
-4. Warn reporters not to disclose vulnerabilities in public issues, discussions, or pull requests.
-5. Keep scope to reporting guidance, disclosure etiquette, and update guidance.
-6. Avoid unsupported claims about SLAs, bounties, supported versions, or guaranteed security response.
-7. Open a small PR that references the source issue and states that no sensitive details are included.
+3. Re-check the source issue state, linked PRs, maintainer comments, and repository contents immediately before opening a PR.
+4. Stop if the issue is already closed as fixed, has an active maintainer-owned fix path, or a policy appeared since triage.
+5. Add a concise `SECURITY.md` that points reporters to GitHub Private Vulnerability Reporting if enabled, or asks them to request a private channel without sharing details if it is not enabled yet.
+6. Warn reporters not to disclose vulnerabilities in public issues, discussions, or pull requests.
+7. Keep scope to reporting guidance, disclosure etiquette, and update guidance.
+8. Avoid unsupported claims about SLAs, bounties, supported versions, or guaranteed security response.
+9. Open a small PR that references the source issue and states that no sensitive details are included.
 
 ## Validation
 
@@ -59,10 +61,11 @@ Stop or revise when:
 - the proposed text claims unsupported SLA, bounty, or version support
 - the PR would expose vulnerability details or encourage public disclosure
 - the repository asks security reports to use a different official channel
+- the source issue is already resolved, assigned to a maintainer implementation, or has a linked maintainer fix in progress
 
 ## Evidence
 
-This candidate is based on repeated public-safe documentation PRs:
+This candidate is based on public-safe documentation attempts with mixed outcomes:
 
 - Dify source issue: https://github.com/langgenius/dify/issues/36692
 - Dify merged PR: https://github.com/langgenius/dify/pull/36873
@@ -70,3 +73,16 @@ This candidate is based on repeated public-safe documentation PRs:
 - Aider PR: https://github.com/Aider-AI/aider/pull/5218
 - mem0 source issue: https://github.com/mem0ai/mem0/issues/5385
 - mem0 PR: https://github.com/mem0ai/mem0/pull/5417
+
+Outcome interpretation:
+
+- Dify is positive PR validation because the docs change merged.
+- Aider is unresolved evidence until maintainer action, merge, or closure.
+- mem0 validates the trigger, not the PR path: the source issue closed as fixed after maintainers handled the private reporting channel, while the docs PR closed unmerged.
+
+## Next Experiment Rules
+
+- Prefer repositories where the issue is still open and explicitly asks for `SECURITY.md` or private reporting guidance.
+- Only open a PR when no maintainer fix is visible after checking issue timeline, linked PRs, and repository contents.
+- Treat a closed-unmerged PR with a fixed related issue as "need solved elsewhere," not as merged-proof evidence.
+- Limit the next run to one carefully preflighted PR before promoting this candidate into a formal reusable skill.

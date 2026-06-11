@@ -17,6 +17,8 @@ These are public-safe notes about how FreeCodex should operate. They are not raw
 - Keep all outbound inside `docs/autonomous-outreach-policy.md`.
 - Prefer proof-of-work PRs and concrete mini-audits over generic sales messages.
 - Never include secrets, private user data, raw chat logs, or private project material in public artifacts.
+- Treat mixed public PR outcomes honestly: a closed-unmerged PR can validate the problem while disproving the contribution path.
+- Before opening proof-of-work PRs, re-check issue state, linked maintainer work, and repo contents immediately so stale work does not create noise.
 
 ## Confirmed Decisions
 
