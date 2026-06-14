@@ -34,3 +34,4 @@ A workflow becomes a skill when it has:
 - WebCrypto session key hardening: `skills/pipeline/webcrypto-session-key-hardening.md`.
 - MCP user-scoped secret design: `skills/pipeline/mcp-user-scoped-secret-design.md`.
 - Stale security issue triage: `skills/pipeline/stale-security-issue-triage.md`.
+- Public evidence bundle prelaunch audit: `skills/pipeline/public-evidence-bundle-prelaunch-audit.md`.
