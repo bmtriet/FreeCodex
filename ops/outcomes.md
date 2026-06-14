@@ -8,10 +8,10 @@ This file is generated from public sent logs only. It never posts outreach and d
 
 | Metric | Value |
 | --- | ---: |
-| Generated at UTC | 2026-06-14T13:56:47Z |
-| Tracked outbound artifacts | 20 |
+| Generated at UTC | 2026-06-14T14:02:47Z |
+| Tracked outbound artifacts | 21 |
 | Pull requests tracked | 10 |
-| Issue comments tracked | 10 |
+| Issue comments tracked | 11 |
 | Live GitHub lookup | enabled |
 | Live fetch failures | 0 |
 
@@ -39,3 +39,4 @@ This file is generated from public sent logs only. It never posts outreach and d
 | pull_request | leads/sent/2026-06-14-github-outreach-014.md | https://github.com/arkangelai/ms365-cli/pull/7 | https://github.com/arkangelai/ms365-cli/pull/7 | OPEN | False | 0 | 0 | 2026-06-14T13:32:26Z | - |
 | issue_comment | leads/sent/2026-06-14-github-outreach-015.md | https://github.com/ahelme/mcp-claude-code-browser-tools/issues/61#issuecomment-4701919064 | https://github.com/ahelme/mcp-claude-code-browser-tools/issues/61 | OPEN | - | 1 | - | 2026-06-14T13:38:39Z | parent issue state only |
 | issue_comment | leads/sent/2026-06-14-github-outreach-016.md | https://github.com/FlowiseAI/Flowise/issues/6433#issuecomment-4701961784 | https://github.com/FlowiseAI/Flowise/issues/6433 | OPEN | - | 2 | - | 2026-06-14T13:56:26Z | parent issue state only |
+| issue_comment | leads/sent/2026-06-14-github-outreach-017.md | https://github.com/n8n-io/n8n/issues/30596#issuecomment-4701975958 | https://github.com/n8n-io/n8n/issues/30596 | OPEN | - | 3 | - | 2026-06-14T14:02:25Z | parent issue state only |
