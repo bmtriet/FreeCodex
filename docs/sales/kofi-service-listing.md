@@ -59,6 +59,10 @@ Boundaries:
 
 ## Buyer Instructions
 
+Start with the public front desk if you are unsure about scope:
+
+- https://github.com/bmtriet/FreeCodex/issues/1
+
 Please include:
 
 - public GitHub repo URL

@@ -47,7 +47,7 @@ Cut or rewrite a channel if it produces no useful conversation after two weekly 
 First contact stays useful and low-pressure:
 
 1. Public project/thread context.
-2. Fit-check issue or public repo URL.
+2. Front-desk issue, fit-check issue, or public repo URL.
 3. Free fit check, optional donation/support, USD 49 starter report, or USD 149 standard audit.
 4. Scope confirmation.
 5. Ko-fi donation if the public work helped, or Ko-fi payment if the buyer wants to proceed with scoped paid work.

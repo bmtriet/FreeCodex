@@ -8,6 +8,7 @@ Star this repo if you want a reusable public checklist for safer AI-built launch
 
 - Landing page: https://bmtriet.github.io/FreeCodex/
 - AI app launch checklist: https://bmtriet.github.io/FreeCodex/ai-app-launch-safety-checklist.html
+- Front desk: https://github.com/bmtriet/FreeCodex/issues/1
 - Request a fit check: https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml
 - Donate/support public proof-of-work: https://ko-fi.com/freecodex
 - Demo sample report: `reports/samples/vibe-agent-demo-audit.md`

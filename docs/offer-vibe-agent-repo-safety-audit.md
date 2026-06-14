@@ -53,6 +53,10 @@ Book the fit check by opening the public GitHub issue form:
 
 - `https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml`
 
+For general questions, donation/support, or choosing the right path, use the public front desk:
+
+- `https://github.com/bmtriet/FreeCodex/issues/1`
+
 Include:
 
 - Public repository URL.
