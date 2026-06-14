@@ -38,6 +38,7 @@ body:
       description: Pick the closest starting point. Final scope is confirmed in a reply before paid work starts.
       options:
         - Free validation slot, if available
+        - Optional donation/support only
         - USD 49 report-only audit
         - Report plus small-fix discussion
         - Not sure yet
@@ -56,4 +57,6 @@ body:
         - label: I understand this is a lightweight launch/readiness audit, not a certified penetration test, compliance attestation, or guarantee of security.
           required: true
         - label: I understand paid work, if applicable, starts only after a positive reply, scope confirmation, and consent to proceed.
+          required: true
+        - label: I understand optional donations support public work but do not create an audit slot, support obligation, or guaranteed deliverable.
           required: true

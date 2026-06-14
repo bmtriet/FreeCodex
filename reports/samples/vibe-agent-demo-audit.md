@@ -8,6 +8,12 @@ Audit type: lightweight public-repo launch/readiness review
 
 This is a public-safe demonstration report. It combines common risk patterns seen in public AI-built app discussions and does not describe a real client repository. No secrets, private data, account access, or confidential findings are included.
 
+Request a fit check: https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml
+
+Optional support for public proof-of-work: https://ko-fi.com/freecodex
+
+Donations are optional support only; they do not create an audit slot, support obligation, or guaranteed deliverable.
+
 ## Disclaimer
 
 This is a lightweight launch/readiness audit. It is not a certified penetration test, legal advice, compliance attestation, or proof that a repository is secure.
