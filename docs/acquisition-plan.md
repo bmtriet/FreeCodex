@@ -13,6 +13,9 @@ Agent Safety Lab by StevenB grows through public proof, useful checklists, and a
    - Keep GitHub Pages as the canonical service page.
    - Publish practical checklists that builders can use before requesting an audit.
    - Make the fit-check issue the primary booking path.
+   - Add value-after-consumption CTAs on owned resources: after a checklist, sample report,
+     or local audit instructions, offer optional Ko-fi support for public work or a public
+     fit-check issue for scoped review. Do not put payment links in first-contact outreach.
 
 3. **Policy-safe channel presence**
    - GitHub: issues, discussions, and small PRs where there is visible context.
