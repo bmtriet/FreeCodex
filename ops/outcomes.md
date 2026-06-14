@@ -8,9 +8,9 @@ This file is generated from public sent logs only. It never posts outreach and d
 
 | Metric | Value |
 | --- | ---: |
-| Generated at UTC | 2026-06-14T13:23:52Z |
-| Tracked outbound artifacts | 17 |
-| Pull requests tracked | 9 |
+| Generated at UTC | 2026-06-14T13:31:20Z |
+| Tracked outbound artifacts | 18 |
+| Pull requests tracked | 10 |
 | Issue comments tracked | 8 |
 | Live GitHub lookup | enabled |
 | Live fetch failures | 0 |
@@ -36,3 +36,4 @@ This file is generated from public sent logs only. It never posts outreach and d
 | pull_request | leads/sent/2026-06-07-github-outreach-011.md | https://github.com/mem0ai/mem0/pull/5417 | https://github.com/mem0ai/mem0/pull/5417 | CLOSED | False | 1 | 0 | 2026-06-11T15:46:57Z | - |
 | issue_comment | leads/sent/2026-06-12-github-outreach-012.md | https://github.com/elastic/kibana/issues/202429#issuecomment-4689515960 | https://github.com/elastic/kibana/issues/202429 | OPEN | - | 3 | - | 2026-06-12T09:19:58Z | parent issue state only |
 | issue_comment | leads/sent/2026-06-14-github-outreach-013.md | https://github.com/JuneKim0007/prompt_hub/issues/29#issuecomment-4701880302 | https://github.com/JuneKim0007/prompt_hub/issues/29 | OPEN | - | 1 | - | 2026-06-14T13:22:44Z | parent issue state only |
+| pull_request | leads/sent/2026-06-14-github-outreach-014.md | https://github.com/arkangelai/ms365-cli/pull/7 | https://github.com/arkangelai/ms365-cli/pull/7 | OPEN | False | 0 | 0 | 2026-06-14T13:30:19Z | - |

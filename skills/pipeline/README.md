@@ -35,3 +35,4 @@ A workflow becomes a skill when it has:
 - MCP user-scoped secret design: `skills/pipeline/mcp-user-scoped-secret-design.md`.
 - Stale security issue triage: `skills/pipeline/stale-security-issue-triage.md`.
 - Public evidence bundle prelaunch audit: `skills/pipeline/public-evidence-bundle-prelaunch-audit.md`.
+- NPM lockfile audit fix: `skills/pipeline/npm-lockfile-audit-fix.md`.
