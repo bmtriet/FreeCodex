@@ -48,9 +48,9 @@ First contact stays useful and low-pressure:
 
 1. Public project/thread context.
 2. Fit-check issue or public repo URL.
-3. Free fit check, USD 49 starter report, or USD 149 standard audit.
+3. Free fit check, optional donation/support, USD 49 starter report, or USD 149 standard audit.
 4. Scope confirmation.
-5. Ko-fi payment if the buyer wants to proceed.
+5. Ko-fi donation if the public work helped, or Ko-fi payment if the buyer wants to proceed with scoped paid work.
 6. Optional USD 299+ standard-audit-plus-one-PR package after fit and scope confirmation.
 
 ## LLMGate Division of Labor

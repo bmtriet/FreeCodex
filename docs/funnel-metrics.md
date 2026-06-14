@@ -13,6 +13,7 @@ Add these fields to each sent outreach log when possible:
 - Reply received: yes or no.
 - Fit-check opened: yes or no.
 - Audit requested: yes or no.
+- Donation received: yes or no.
 - Paid conversion: yes or no.
 - Notes: public-safe summary only.
 
@@ -23,6 +24,7 @@ Add these fields to each sent outreach log when possible:
 - **Fit-check opened:** A GitHub fit-check issue or equivalent public request for review.
 - **Qualified lead:** A public repo that matches at least two lead filters in `docs/campaign-playbook.md`.
 - **Audit requested:** The builder explicitly asks for a review or accepts an offered validation slot.
+- **Donation received:** Someone sends optional Ko-fi support for public proof-of-work without requesting a scoped audit deliverable.
 - **Paid conversion:** The buyer agrees to a paid starter report, standard audit, or scoped paid fix path after scope confirmation.
 
 ## Weekly Summary
@@ -34,6 +36,7 @@ Track aggregate results:
 - Replies received.
 - Fit-check issues opened.
 - Free audits accepted.
+- Donations received.
 - Paid reports accepted.
 - Reports delivered within 24-48 hours.
 - Small fix scopes requested.

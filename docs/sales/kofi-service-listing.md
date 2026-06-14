@@ -2,7 +2,7 @@
 
 Use this as the final public-safe listing copy for `https://ko-fi.com/freecodex`.
 
-Do not use Ko-fi as a cold first-contact link. Share it after a positive reply, direct request for pricing, or scope confirmation.
+Do not use Ko-fi as a cold first-contact link. Share it after a positive reply, direct request for pricing, scope confirmation, or when someone explicitly asks how to support public proof-of-work.
 
 ## Title
 
@@ -14,7 +14,9 @@ Lightweight pre-launch safety review for public AI-built app repos.
 
 ## Price
 
-Free fit check is available before purchase through the GitHub issue form. Ko-fi is for confirmed paid report or fix-PR scopes.
+Free fit check is available before purchase through the GitHub issue form. Ko-fi supports both optional pay-what-you-want donations and confirmed paid report or fix-PR scopes.
+
+Donation / support: pay what you want if a public PR, triage note, checklist, or mini-audit helped and you do not need a scoped audit.
 
 Starter report: USD 49.
 
@@ -40,6 +42,12 @@ What you get:
 - redacted evidence only
 - typical turnaround: 24-48 hours, queue permitting
 - optional one-PR package only when bounded and high-confidence
+
+Donation/support option:
+
+- pay what you want to support public proof-of-work
+- useful when a public PR, triage note, checklist, or mini-audit helped
+- does not create a report queue slot or guaranteed deliverable
 
 Boundaries:
 
@@ -72,6 +80,10 @@ No. Suspicious values are redacted in reports, and secrets should not be sent.
 **Do you fix issues too?**
 
 Small bounded fixes can be offered after the report and scope confirmation.
+
+**Can I just donate?**
+
+Yes. Donations are welcome if public work helped and you do not need a scoped audit. A donation is support, not a guaranteed report or support contract.
 
 **Is this a pentest?**
 

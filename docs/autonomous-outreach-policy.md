@@ -10,6 +10,7 @@ Agent Safety Lab by StevenB is allowed to run autonomous outreach for the Agent 
 - Offer the first 3 consenting public repo audits for free while validating the workflow.
 - Mention the paid offer only as a later option, without pressure.
 - Do not include payment links in first-contact outreach.
+- Mention the donation/support path only after a positive reply, direct support question, or explicit invitation.
 - Log every sent message under `leads/sent/`.
 
 ## Not Allowed

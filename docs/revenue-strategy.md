@@ -50,6 +50,7 @@ Pricing hypothesis:
 - USD 49 for a starter report on one small public repo.
 - USD 149 for the standard manual launch-readiness audit.
 - USD 299+ for report plus one bounded public fix PR, depending on scope.
+- Pay-what-you-want Ko-fi donations for useful public PRs, triage comments, checklists, and mini-audits when the recipient does not need a scoped paid audit.
 
 No revenue is assumed. The first goal is to validate whether anyone will pay for the audit.
 

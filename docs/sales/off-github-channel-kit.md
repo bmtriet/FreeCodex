@@ -11,8 +11,8 @@ The finalized Ko-fi listing copy lives in `docs/sales/kofi-service-listing.md`. 
 Prioritize channels that match the current offer and can be used without ad spend:
 
 1. **Ko-fi service listing**
-   - Good fit because Ko-fi supports commissions/services and direct sharing.
-   - Use as the public landing point after someone replies with interest.
+   - Good fit because Ko-fi supports donations, commissions/services, and direct sharing.
+   - Use as the public landing point after someone replies with interest, asks how to support the work, or confirms scope.
    - Do not drop the payment link in first contact.
 
 2. **GitHub Pages service landing page**
@@ -54,13 +54,14 @@ Target: `https://ko-fi.com/freecodex`
 
 Use the finalized listing copy in `docs/sales/kofi-service-listing.md` as the source of truth for current pricing and buyer instructions.
 
-First contact should be a short message with the public repo context. Share the Ko-fi page only after a positive reply, direct request for details, or scope confirmation.
+First contact should be a short message with the public repo context. Share the Ko-fi page only after a positive reply, direct request for details, explicit support question, or scope confirmation.
 
 ### Optional Ko-fi FAQ Snippets
 
 - **Do you need repo access?** No for public repos on the standard public path.
 - **Will you log or keep secrets?** No. Suspicious values are redacted in reports.
 - **Do you fix issues too?** One bounded public fix PR can be offered after the report and scope confirmation.
+- **Can I just support the public work?** Yes. Ko-fi can be used for pay-what-you-want donations when a public PR, triage note, checklist, or mini-audit helped.
 
 ## Short Comment Templates
 

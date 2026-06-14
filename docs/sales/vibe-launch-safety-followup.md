@@ -15,7 +15,19 @@ To confirm fit, please send:
 2. Launch context and timing
 3. Main stack/hosting
 4. Any auth, payment, webhook, Supabase/Firebase, MCP, or agent workflow areas to pay attention to
-5. Whether you want the free fit check, USD 49 starter report, or USD 149 standard audit
+5. Whether you want the free fit check, optional donation/support path, USD 49 starter report, or USD 149 standard audit
+```
+
+## Support-Only Reply
+
+Use only after someone explicitly asks how to support public proof-of-work, or after a positive reply where they say the free public note/PR was useful but they do not need a scoped audit.
+
+```text
+Thanks. If the public note/PR/checklist was useful and you just want to support the work, the Ko-fi page is here:
+
+https://ko-fi.com/freecodex
+
+That can be any amount. A donation is optional support, not a paid audit slot or guaranteed deliverable. If you later want a scoped report, we can confirm fit and scope first.
 ```
 
 ## Paid Report Confirmation
