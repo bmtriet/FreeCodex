@@ -4,20 +4,24 @@ Agent Safety Lab by StevenB is the public-facing service for lightweight launch/
 
 It packages an Agent Repo Safety Audit for public GitHub repos built with Codex, Cursor, Claude Code, Lovable, Bolt, Replit, MCP servers, agent skills, or similar workflows. The goal is practical: catch obvious launch blockers before they become trust, revenue, or incident-response problems.
 
-Star this repo if the checklist helped. Open a fit-check issue for a public repo review, or sponsor a public safety pass if you want to fund public proof-of-work for a repo you choose.
+If you want StevenB to look at a public repo, start with a free fit-check issue. Fit checks confirm whether the repo is in scope before any paid audit, sponsored public safety pass, or optional support.
+
+Star this repo if the checklist helped. If public proof-of-work helped and you do not need a scoped audit, optional Ko-fi support is welcome.
 
 - Landing page: https://bmtriet.github.io/FreeCodex/
 - AI app launch checklist: https://bmtriet.github.io/FreeCodex/ai-app-launch-safety-checklist.html
 - Sponsored Public Safety Pass: https://bmtriet.github.io/FreeCodex/sponsor-public-safety-pass.html
 - Front desk: https://github.com/bmtriet/FreeCodex/issues/1
-- Request a fit check: https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml
-- Sponsor/support public proof-of-work: https://ko-fi.com/freecodex
+- Start here: request a free public-repo fit check: https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml
+- Optional Ko-fi support after public work helped or after fit/scope is confirmed: https://ko-fi.com/freecodex
 - Demo sample report: `reports/samples/vibe-agent-demo-audit.md`
 - Actual FreeCodex sample audit: `reports/samples/freecodex-audit.md`
 
 Donations are optional support for public PRs, triage notes, checklists, and mini-audits. They do not create an audit slot, support obligation, or guaranteed deliverable. Paid audits still require fit and scope confirmation first.
 
 Sponsored Public Safety Passes are pay-what-you-want public mini-passes for a public repo you choose. They are queue-limited, accepted only after fit confirmation, and may result in a public issue, comment, checklist note, or report. They are not private audits or security guarantees.
+
+Want to sponsor a pass for a public repo? Open the fit-check form first and choose "Sponsored Public Safety Pass."
 
 Agent Safety Lab by StevenB is an independent project. FreeCodex remains the public workshop and proof repo behind the lab. StevenB is the public operator name; GitHub proof-of-work continues through `bmtriet`.
 

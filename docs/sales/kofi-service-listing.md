@@ -14,7 +14,7 @@ Lightweight pre-launch safety review for public AI-built app repos.
 
 ## Price
 
-Free fit check is available before purchase through the GitHub issue form. Ko-fi supports both optional pay-what-you-want donations and confirmed paid report or fix-PR scopes.
+If you want an audit, open the fit-check issue first; use Ko-fi only after fit and scope are confirmed. Ko-fi supports optional pay-what-you-want donations, sponsored public safety passes, and confirmed paid report or fix-PR scopes.
 
 Donation / support: pay what you want if a public PR, triage note, checklist, or mini-audit helped and you do not need a scoped audit.
 
@@ -53,7 +53,7 @@ Donation/support option:
 
 Sponsored public pass option:
 
-- pay what you want to sponsor a public-safe mini-pass for one public repo
+- after fit confirmation, pay what you want to sponsor a public-safe mini-pass for one public repo
 - accepted only after fit confirmation and queue review
 - deliverable may be a public issue, comment, checklist note, or report
 - not a private audit, certified pentest, emergency response path, or security guarantee
@@ -68,7 +68,11 @@ Boundaries:
 
 ## Buyer Instructions
 
-Start with the public front desk if you are unsure about scope:
+Start with the public fit-check issue if you want an audit:
+
+- https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml
+
+Use the public front desk if you are unsure about scope, donation/support, or sponsored public passes:
 
 - https://github.com/bmtriet/FreeCodex/issues/1
 
@@ -97,6 +101,10 @@ Small bounded fixes can be offered after the report and scope confirmation.
 **Can I just donate?**
 
 Yes. Donations are welcome if public work helped and you do not need a scoped audit. A donation is support, not a guaranteed report or support contract.
+
+**Can I sponsor a public repo I do not own?**
+
+Maybe. Open a fit-check issue first. The work must stay public-safe, non-invasive, and based only on public information unless explicit permission and scope are confirmed.
 
 **Is this a pentest?**
 

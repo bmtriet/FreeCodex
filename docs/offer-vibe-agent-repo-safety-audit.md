@@ -17,7 +17,7 @@ See `reports/samples/vibe-agent-demo-audit.md` for a synthetic public-safe examp
 
 ## Pricing
 
-- Free fit check: quick scope review for one public repo; no full report.
+- Free fit check: the default first step for one public repo; confirms whether the repo is in scope before any paid audit, sponsored pass, or optional support decision.
 - Optional donation: pay what you want on Ko-fi if a public PR, triage note, checklist, or mini-audit helped and no scoped audit is needed.
 - Sponsored Public Safety Pass: pay what you want on Ko-fi to sponsor a public-safe mini-audit, triage note, checklist pass, or report for a public repo you choose, queue and fit permitting.
 - Starter report: USD 49 for one small public repo, deterministic checks, concise notes, and top launch risks.
@@ -50,11 +50,13 @@ Not included:
 
 ## How To Request
 
-Book the fit check by opening the public GitHub issue form:
+Start with the fit-check form for any public repo review, paid audit interest, or sponsored public safety pass:
 
 - `https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml`
 
-For general questions, donation/support, or choosing the right path, use the public front desk:
+Choose the closest path in the form: free fit check, paid report interest, sponsored public safety pass, bounded public fix PR, or not sure yet.
+
+For general questions without a specific repo, use the public front desk:
 
 - `https://github.com/bmtriet/FreeCodex/issues/1`
 

@@ -5,7 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for checking fit. Public proof-of-work is visible in this repo: recent Mission Control shows 11 GitHub PRs opened, 14 issue comments sent, and 0 payment links in sent logs.
+        Thanks for checking fit. StevenB will use this issue to confirm whether one public repo is in scope and which path fits best: free fit check, paid report, sponsored public safety pass, or bounded public fix PR.
+        Public proof-of-work is visible in this repo: Mission Control tracks recent GitHub PRs, issue comments, maintainer signals, and first-contact payment-link hygiene.
         Please include only public-safe information. Do not pay or sponsor until StevenB confirms fit and scope in a reply.
         Do not paste secrets, passwords, tokens, cookies, private keys, private customer data, or account access.
   - type: input
@@ -39,11 +40,24 @@ body:
       description: Pick the closest path. Do not pay or sponsor until StevenB confirms public-safe fit and scope in a reply.
       options:
         - Free fit check only - tell me whether this public repo is in scope
-        - Paid report interest - confirm fit/scope before I pay for a Starter or Standard audit
-        - Sponsored Public Safety Pass - confirm fit before I sponsor public proof-of-work
+        - Paid report interest - I may buy a Starter or Standard audit after fit/scope confirmation
+        - Sponsored Public Safety Pass - I may sponsor public proof-of-work after fit confirmation
         - Report plus small public fix PR - discuss whether one bounded fix is feasible
-        - Donation/support question only - no audit slot or deliverable requested
+        - Optional support question only - no audit slot, queue priority, or deliverable requested
         - Not sure yet - help me choose the right path
+    validations:
+      required: true
+  - type: dropdown
+    id: timeline
+    attributes:
+      label: Timeline
+      description: This helps StevenB prioritize near-launch requests without asking for payment up front.
+      options:
+        - Launching this week
+        - Launching this month
+        - Exploring / no launch date yet
+        - Sponsor or support only
+        - Not sure
     validations:
       required: true
   - type: checkboxes
