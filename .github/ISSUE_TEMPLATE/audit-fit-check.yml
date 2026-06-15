@@ -5,7 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for checking fit. Please include only public-safe information.
+        Thanks for checking fit. Public proof-of-work is visible in this repo: recent Mission Control shows 11 GitHub PRs opened, 14 issue comments sent, and 0 payment links in sent logs.
+        Please include only public-safe information. Do not pay or sponsor until StevenB confirms fit and scope in a reply.
         Do not paste secrets, passwords, tokens, cookies, private keys, private customer data, or account access.
   - type: input
     id: repo_url
