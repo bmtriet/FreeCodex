@@ -18,6 +18,7 @@ import scout_leads  # noqa: E402
 import scout_big_repos  # noqa: E402
 import mission_control  # noqa: E402
 import llm_coworker  # noqa: E402
+import prepare_subagent_brief  # noqa: E402
 
 
 class RepoAuditTests(unittest.TestCase):
@@ -509,6 +510,42 @@ class RepoAuditTests(unittest.TestCase):
         review = "# Summary\nOk\n# Findings\nNone\n# Suggested Changes\nNone\n# Risks\nLow\n"
 
         self.assertEqual(llm_coworker.validate_review(review), review)
+
+    def test_prepare_subagent_brief_includes_policy_and_report_template(self) -> None:
+        brief = prepare_subagent_brief.render_brief(
+            "proof-worker",
+            "Find one bounded useful public contribution.",
+            "https://github.com/example/app/issues/1",
+            max_chars_per_file=1200,
+        )
+
+        self.assertIn("# Sub-Agent Brief", brief)
+        self.assertIn("- Name: proof-worker", brief)
+        self.assertIn("Do not include payment links", brief)
+        self.assertIn("templates/subagent-run-report.md", brief)
+        self.assertIn("https://github.com/example/app/issues/1", brief)
+
+    def test_prepare_subagent_brief_writes_output_file(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            output = Path(tmp) / "brief.md"
+
+            with mock.patch(
+                "sys.argv",
+                [
+                    "prepare_subagent_brief.py",
+                    "--role",
+                    "evolution-distiller",
+                    "--objective",
+                    "Distill one repeated pattern.",
+                    "--output",
+                    str(output),
+                ],
+            ):
+                self.assertEqual(prepare_subagent_brief.main(), 0)
+
+            text = output.read_text(encoding="utf-8")
+            self.assertIn("- Name: evolution-distiller", text)
+            self.assertIn("Distill one repeated pattern.", text)
 
 
 if __name__ == "__main__":

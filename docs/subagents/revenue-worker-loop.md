@@ -181,6 +181,8 @@ Ask each worker to return `templates/subagent-run-report.md` when the round may 
 - recommended action is one of a small set
 - validation and stop conditions are captured before Codex acts
 
+Use `python3 scripts/prepare_subagent_brief.py --role proof-worker --target <public-url>` to prepare a consistent public-safe brief before spawning or delegating to a worker.
+
 ## LLMGate Division
 
 Use LLMGate first for heavy public-safe work:
