@@ -38,6 +38,7 @@ body:
       description: Pick the closest starting point. Final scope is confirmed in a reply before paid work starts.
       options:
         - Free validation slot, if available
+        - Sponsored Public Safety Pass - pay what you want on Ko-fi for a public-safe mini-audit, triage note, or checklist pass, queue and fit permitting
         - Optional donation/support only
         - USD 49 report-only audit
         - Report plus small-fix discussion
@@ -57,6 +58,8 @@ body:
         - label: I understand this is a lightweight launch/readiness audit, not a certified penetration test, compliance attestation, or guarantee of security.
           required: true
         - label: I understand paid work, if applicable, starts only after a positive reply, scope confirmation, and consent to proceed.
+          required: true
+        - label: I understand a Sponsored Public Safety Pass is public-repo-only, queue-limited, and accepted only after fit confirmation; any deliverable is public-safe and may be a public issue, comment, checklist note, or report.
           required: true
         - label: I understand optional donations support public work but do not create an audit slot, support obligation, or guaranteed deliverable.
           required: true

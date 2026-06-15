@@ -18,6 +18,8 @@ Free fit check is available before purchase through the GitHub issue form. Ko-fi
 
 Donation / support: pay what you want if a public PR, triage note, checklist, or mini-audit helped and you do not need a scoped audit.
 
+Sponsored Public Safety Pass: pay what you want to sponsor a public-safe mini-audit, triage note, checklist pass, or report for a public repo you choose, queue and fit permitting.
+
 Starter report: USD 49.
 
 Standard audit: USD 149.
@@ -48,6 +50,13 @@ Donation/support option:
 - pay what you want to support public proof-of-work
 - useful when a public PR, triage note, checklist, or mini-audit helped
 - does not create a report queue slot or guaranteed deliverable
+
+Sponsored public pass option:
+
+- pay what you want to sponsor a public-safe mini-pass for one public repo
+- accepted only after fit confirmation and queue review
+- deliverable may be a public issue, comment, checklist note, or report
+- not a private audit, certified pentest, emergency response path, or security guarantee
 
 Boundaries:
 

@@ -10,11 +10,13 @@ Star this repo if you want a reusable public checklist for safer AI-built launch
 - AI app launch checklist: https://bmtriet.github.io/FreeCodex/ai-app-launch-safety-checklist.html
 - Front desk: https://github.com/bmtriet/FreeCodex/issues/1
 - Request a fit check: https://github.com/bmtriet/FreeCodex/issues/new?template=audit-fit-check.yml
-- Donate/support public proof-of-work: https://ko-fi.com/freecodex
+- Sponsor/support public proof-of-work: https://ko-fi.com/freecodex
 - Demo sample report: `reports/samples/vibe-agent-demo-audit.md`
 - Actual FreeCodex sample audit: `reports/samples/freecodex-audit.md`
 
 Donations are optional support for public PRs, triage notes, checklists, and mini-audits. They do not create an audit slot, support obligation, or guaranteed deliverable. Paid audits still require fit and scope confirmation first.
+
+Sponsored Public Safety Passes are pay-what-you-want public mini-passes for a public repo you choose. They are queue-limited, accepted only after fit confirmation, and may result in a public issue, comment, checklist note, or report. They are not private audits or security guarantees.
 
 Agent Safety Lab by StevenB is an independent project. FreeCodex remains the public workshop and proof repo behind the lab. StevenB is the public operator name; GitHub proof-of-work continues through `bmtriet`.
 

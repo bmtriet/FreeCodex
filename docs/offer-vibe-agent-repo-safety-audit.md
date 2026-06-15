@@ -19,6 +19,7 @@ See `reports/samples/vibe-agent-demo-audit.md` for a synthetic public-safe examp
 
 - Free fit check: quick scope review for one public repo; no full report.
 - Optional donation: pay what you want on Ko-fi if a public PR, triage note, checklist, or mini-audit helped and no scoped audit is needed.
+- Sponsored Public Safety Pass: pay what you want on Ko-fi to sponsor a public-safe mini-audit, triage note, checklist pass, or report for a public repo you choose, queue and fit permitting.
 - Starter report: USD 49 for one small public repo, deterministic checks, concise notes, and top launch risks.
 - Standard audit: USD 149 for a manual launch-readiness review, prioritized markdown report, and concrete fix plan.
 - Report plus one bounded public fix PR: starts at USD 299 and includes the standard audit plus one small public PR, confirmed only after fit and scope review.
@@ -66,6 +67,8 @@ Include:
 First contact stays public-safe and does not require payment. Listed prices are for public repos. If the repo is a fit, paid work starts only after a positive reply, scope confirmation, and consent to proceed.
 
 Optional donations are welcome at `https://ko-fi.com/freecodex` when public proof-of-work was useful but no paid audit is needed. Donations do not create an audit queue slot, support obligation, or guaranteed deliverable.
+
+Sponsored Public Safety Passes are public-repo-only, queue-limited, and accepted only after fit confirmation. The deliverable, if accepted, is public-safe and may be a public issue, comment, checklist note, or report. Do not use this path for private repos, confidential findings, credentials, or emergency security response.
 
 Do not send secrets, passwords, tokens, cookies, or private keys.
 
