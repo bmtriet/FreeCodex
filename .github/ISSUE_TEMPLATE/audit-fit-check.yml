@@ -34,15 +34,15 @@ body:
   - type: dropdown
     id: requested_path
     attributes:
-      label: Requested path
-      description: Pick the closest starting point. Final scope is confirmed in a reply before paid work starts.
+      label: What should StevenB confirm?
+      description: Pick the closest path. Do not pay or sponsor until StevenB confirms public-safe fit and scope in a reply.
       options:
-        - Free validation slot, if available
-        - Sponsored Public Safety Pass - pay what you want on Ko-fi for a public-safe mini-audit, triage note, or checklist pass, queue and fit permitting
-        - Optional donation/support only
-        - USD 49 report-only audit
-        - Report plus small-fix discussion
-        - Not sure yet
+        - Free fit check only - tell me whether this public repo is in scope
+        - Paid report interest - confirm fit/scope before I pay for a Starter or Standard audit
+        - Sponsored Public Safety Pass - confirm fit before I sponsor public proof-of-work
+        - Report plus small public fix PR - discuss whether one bounded fix is feasible
+        - Donation/support question only - no audit slot or deliverable requested
+        - Not sure yet - help me choose the right path
     validations:
       required: true
   - type: checkboxes
