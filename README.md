@@ -4,7 +4,7 @@ Agent Safety Lab by StevenB is the public-facing service for lightweight launch/
 
 It packages an Agent Repo Safety Audit for public GitHub repos built with Codex, Cursor, Claude Code, Lovable, Bolt, Replit, MCP servers, agent skills, or similar workflows. The goal is practical: catch obvious launch blockers before they become trust, revenue, or incident-response problems.
 
-Star this repo if you want a reusable public checklist for safer AI-built launches. Open a fit-check issue if you want a public-repo scope check or paid launch-readiness report.
+Star this repo if the checklist helped. Open a fit-check issue for a public repo review, or sponsor a public safety pass if you want to fund public proof-of-work for a repo you choose.
 
 - Landing page: https://bmtriet.github.io/FreeCodex/
 - AI app launch checklist: https://bmtriet.github.io/FreeCodex/ai-app-launch-safety-checklist.html
@@ -42,6 +42,7 @@ Build a practical evolution loop for Codex:
 - `reports/` - public-safe sample reports and sanitized audit artifacts.
 - `leads/` - public-safe lead research and outreach drafts.
 - `ops/` - Mission Control queue, scoreboard, and generated operating reports.
+- `docs/subagents/` - public-safe worker roles, prompts, and revenue loop delegation.
 - `templates/` - copy-ready templates for repeatable work.
 - `scripts/` - local validation and maintenance tools.
 
@@ -55,6 +56,7 @@ Public fit-check booking starts with `.github/ISSUE_TEMPLATE/audit-fit-check.yml
 The public service landing page publishes at `https://bmtriet.github.io/FreeCodex/`.
 The strongest public proof starts with `reports/samples/vibe-agent-demo-audit.md`.
 The evolution loop is documented in `docs/evolution-loop.md`.
+The sub-agent revenue loop is documented in `docs/subagents/revenue-worker-loop.md`.
 Quota fallback is documented in `docs/llm-gateway-fallback.md`.
 Use `python3 scripts/llm_coworker.py` as the LLMGate coding co-worker command.
 Use `python3 scripts/scout_big_repos.py` for targeted large-repo lead scouting.

@@ -57,9 +57,7 @@ body:
           required: true
         - label: I understand this is a lightweight launch/readiness audit, not a certified penetration test, compliance attestation, or guarantee of security.
           required: true
-        - label: I understand paid work, if applicable, starts only after a positive reply, scope confirmation, and consent to proceed.
+        - label: I understand paid work, sponsored passes, or optional support start only after a positive reply, fit/scope confirmation, and consent to proceed.
           required: true
-        - label: I understand a Sponsored Public Safety Pass is public-repo-only, queue-limited, and accepted only after fit confirmation; any deliverable is public-safe and may be a public issue, comment, checklist note, or report.
-          required: true
-        - label: I understand optional donations support public work but do not create an audit slot, support obligation, or guaranteed deliverable.
+        - label: I understand donations and sponsored passes support public work only; they do not guarantee a private audit, emergency response, or deliverable unless StevenB confirms fit and scope.
           required: true
