@@ -28,6 +28,7 @@ Outputs:
 - Ranked candidates with URL, fit, first safe action, skip reason, and whether action should be PR, comment, or no action.
 - No public posting.
 - No payment links in first-contact drafts.
+- A filled `templates/subagent-run-report.md` when the output will be reviewed by Main Codex.
 
 Stop conditions:
 
@@ -51,6 +52,7 @@ Outputs:
 - Copy and UX findings with exact file references.
 - Proposed wording for clearer Ko-fi support, Sponsored Public Safety Pass, fit-check, or paid audit conversion.
 - No edits unless assigned a disjoint file ownership scope.
+- A filled `templates/subagent-run-report.md` when the output will be reviewed by Main Codex.
 
 Stop conditions:
 
@@ -74,6 +76,7 @@ Outputs:
 - A minimal PR plan, status comment, or no-action recommendation.
 - Repro commands and public-safe evidence.
 - A draft outbound message with no payment link.
+- A filled `templates/subagent-run-report.md` when the output will be reviewed by Main Codex.
 
 Stop conditions:
 
@@ -97,6 +100,7 @@ Outputs:
 - First-contact or reply draft.
 - Matching `leads/sent/` log draft.
 - Follow-up status recommendation.
+- A filled `templates/subagent-run-report.md` when the output will be reviewed by Main Codex.
 
 Stop conditions:
 
@@ -123,6 +127,7 @@ Outputs:
 - Redacted evidence.
 - Fix priorities.
 - Scope caveats.
+- A filled `templates/subagent-run-report.md` when the output will be reviewed by Main Codex.
 
 Stop conditions:
 
@@ -147,6 +152,7 @@ Outputs:
 - Checklists.
 - Eval notes.
 - Failure-mode summaries.
+- A filled `templates/subagent-run-report.md` when the output will be reviewed by Main Codex.
 
 Stop conditions:
 
@@ -165,6 +171,15 @@ Use sub-agents in a round only when they can run in parallel with local work.
 3. While workers run, Codex performs non-overlapping local work.
 4. Codex reviews worker outputs, applies only the useful parts, and discards unsafe or vague suggestions.
 5. Codex runs validation, commits, pushes, and checks CI/Pages when files changed.
+
+## End-Of-Run Report
+
+Ask each worker to return `templates/subagent-run-report.md` when the round may lead to a public action, owned-surface edit, skill/checklist, or audit note. This keeps the handoff public-safe and makes the main review faster:
+
+- evidence stays public-only
+- safety checks are explicit
+- recommended action is one of a small set
+- validation and stop conditions are captured before Codex acts
 
 ## LLMGate Division
 
@@ -204,6 +219,7 @@ Respect docs/autonomous-outreach-policy.md.
 Do not post anything.
 Do not include payment links in first-contact drafts.
 Return ranked candidates with URL, why fit, safe first action, risk/skip notes, and action type: PR, comment, owned-surface update, or no action.
+When recommending action, include a filled templates/subagent-run-report.md.
 ```
 
 ### Conversion Reviewer Prompt
@@ -215,6 +231,7 @@ Find the highest-impact changes that could increase Ko-fi support, Sponsored Pub
 Do not blur donation, sponsored public pass, and paid audit boundaries.
 Do not suggest payment links in first-contact outreach.
 Return exact file references and proposed wording.
+When recommending edits, include a filled templates/subagent-run-report.md.
 ```
 
 ### Proof Worker Prompt
@@ -227,6 +244,7 @@ Include verification commands and public-safe evidence.
 Do not request secrets, credentials, private access, or production data.
 Do not include payment links.
 Stop if the action would be generic, risky, private, or uninvited.
+When recommending action, include a filled templates/subagent-run-report.md.
 ```
 
 ### Evolution Distiller Prompt
@@ -237,6 +255,7 @@ Review recent public-safe work and turn one repeated pattern into a skill candid
 Use docs/evolution-loop.md.
 Keep it public-safe and actionable.
 Return the proposed artifact path, trigger, steps, validation, and stop conditions.
+When recommending an artifact, include a filled templates/subagent-run-report.md.
 ```
 
 ## Main Codex Responsibilities
